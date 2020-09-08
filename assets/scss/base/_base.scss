@@ -1,0 +1,67 @@
+/**Put Screen Size and media query in this page **/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+  
+    /* Background */
+    --themed-background-color: #E3F7FF;
+    --main-background-color: white;
+  
+    --text-color: #003584;
+    --text-color-highlight: #0085FF;
+  
+    --heading-color-light: #0034EB;
+    --heading-color-dark: #00D7D7;
+
+    --icon-color: #2A6398;
+    --download-button: #C5EDFA;
+
+    --AC-logo: #00B6FF;
+
+    --form-field-txt: #A38787;
+  
+    --submit-btn-light: #00B6FF;
+    --submit-btn-dark: #1A4374;
+  
+    --background-footer: #1A4374;
+
+    --form-input: #00B6FF;
+  }
+  
+  html[data-theme='dark'] {
+    --themed-background-color:#3C1100;
+    --main-background-color: #000000;
+  
+    --text-color: #FFCA7B;
+    --text-color-highlight: #FF7A00;
+  
+    --heading-color-light: #FFD027;
+    --heading-color-dark: #FF2828;
+  
+    --icon-color:#D59C67;
+    --AC-logo:#FF4900;
+    --form-field-txt: #AFC7C7;
+  
+    --submit-btn-light: #FFCA7B;
+    --submit-btn-dark: #FF4900;
+  
+    --background-footer: #3C1100;
+  
+    /*extra*/
+    --download-button: #FF2E00;
+
+    --form-input: #FFCA7B;
+  
+  }
+  

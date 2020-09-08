@@ -1,0 +1,33 @@
+#skills {
+    .content-container{
+        display:flex;
+        height:20rem;
+        .header-right{
+            width:9.7rem;
+            text-align:left;
+            padding:3rem 2.5rem;
+            box-sizing:content-box;
+            background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
+            border-radius: 20px 0 0 20px;
+        }
+        .icon-container{
+            margin:auto;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            justify-items:center;
+            align-items:center;
+            grid-gap: 50px;
+            .icon {
+                text-align: center;
+                i {
+                    font-size:4rem;
+                    color:var(--icon-color);
+                }
+                p {
+                    font-size:1rem;
+                }
+            }
+        }
+    }
+}
+

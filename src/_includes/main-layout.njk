@@ -1,0 +1,144 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <title>Eleventy Blog</title> 
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Parisienne&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/25f692c22b.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/assets/css/styles.css">
+    </head> 
+
+    <body> 
+        <header>
+            <h1 class="header--name">Anna</h1>
+            <p class="header--description">Web Developer</p>
+            <nav class="nav">
+                <a class="btn" href="#">About</a>
+                <a class="btn" href="#">Projects</a>
+                <a class="btn" href="#">Contact</a>
+            </nav>
+        </header> 
+        <main> 
+            <section id="about">
+                <div class="content-container">
+                <div class="header-left">
+                    <h2>About <span>Me</span></h2>
+                </div>
+                <p>
+                    {# about me -- change content in index.njk #}
+                    {{ content | safe }}
+                    <a class="read-more">Read more ></a>
+                </p>
+                </div>
+                <div class="download-container">
+                    <a class="button">Download Resume</a>
+                </div>
+            </section>
+
+
+            <section id="skills" class="u-margin-bottom-medium">
+                <div class="content-container">
+                    <div class="icon-container flex-item">
+                        <div class="icon">
+                            <i class="fab fa-github"></i>
+                            <p>Github<p>
+                        </div>
+                        <div class="icon">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS<p>
+                        </div>
+                        <div class="icon">
+                        <i class="fab fa-js"></i>
+                            <p>Javascript<p>
+                        </div>
+                        <div class="icon">
+                        <i class="fab fa-react"></i>
+                            <p>React<p>
+                        </div>
+                        <div class="icon">
+                        <i class="fab fa-bitbucket"></i>
+                            <p>Bitbucket<p>
+                        </div>
+                        <div class="icon">
+                        <i class="fab fa-html5"></i>
+                            <p>HTML<p>
+                        </div>
+                        <div class="icon">
+                        <i class="fab fa-salesforce"></i>
+                            <p>Salesforce<p>
+                        </div>
+                        <div class="icon">
+                        <i class="fab fa-sass"></i>
+                            <p>SCSS<p>
+                        </div>
+                    </div>
+                    <div class="header-right flex-item">
+                        <h2>Skills &amp; Tech</h2>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="u-margin-bottom-medium">
+                <div class="header-left">
+                    <h2>Projects</h2>
+                </div>
+                <div class="content-container">
+                    <div class="project">
+                    </div>
+                    <div class="project">
+                    </div>
+                    <div class="project">
+                    </div>
+                    <div class="project">
+                    </div>
+                    <div class="project">
+                    </div>
+                    <div class="project">
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="content-container">
+                    <h2>Let's Connect</h2>
+                    <p>
+                        You can reach me through <a href="#">email</a> or linkedIn. 
+                        Or simply leave your name, email and message in the form and I’ll respond asap!
+                    </p>
+                </div>
+                <form action="#" name="contact-page" class="contact-form" autocomplete="off" netlify>
+
+                    <div class="form-group form-group-name">
+                        <label for="name" class="form-label">Name*</label>
+                        <input type="text" class="form-input" placeholder="Full Name" id="name" required>
+                    </div>
+
+                    <div class="form-group form-group-email">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" class="form-input" placeholder="Your Email" id="email" required>
+                    </div>
+
+                    <div class="form-group form-group-subject">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-input" placeholder="Subject" id="subject">
+                    </div>
+                    <div class="form-group form-group-message">
+                        <label for="message" class="form-label">Message*</label>
+                        <textarea name="message" class="form-input" id="message" spellcheck="true" placeholder="Please leave a message!" required></textarea>
+                    </div>
+                    <button type="submit" class="button-submit">Submit</button>
+                </form>
+            </section>
+        </main> 
+
+        <footer>
+            <div class="footer-content">
+                <span class="logo">AC</span> 
+                <span>Designed</span> 
+                <span>by</span>
+                <span>Anna Chowattanakul</span>
+            </div>
+        </footer> 
+    </body> 
+</html>

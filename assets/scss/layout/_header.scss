@@ -1,0 +1,38 @@
+header {
+    font-family: "Raleway", sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #E3F7FF,white);
+}
+
+.header--name {
+    font-family: 'Monoton', cursive;
+    font-size: 20vw;
+    line-height: 1;
+    background-blend-mode: screen;
+    background-image: linear-gradient(
+        to right bottom,
+        #003584,
+        #0085FF
+      ),
+      url("/images/cropped.jpg");
+  
+    background-size: cover;
+    background-position: center top;
+    margin-top: -10rem;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  .header--description {
+    font-size: 4vw;
+    background-size: cover;
+    background-position: center top;
+    margin-top: 0;
+    -webkit-background-clip: text;
+    color: transparent;
+  }

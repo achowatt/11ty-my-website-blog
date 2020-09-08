@@ -1,0 +1,38 @@
+#about {
+    padding-top: 3rem;
+    .content-container{
+        display:flex;
+        height:70%;
+        .header-left{
+            width:13vw;
+            height:8rem;
+            margin: auto 0;
+            text-align:right;
+            padding:3rem 2.5rem;
+            box-sizing:content-box;
+            background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
+            border-radius: 0 20px 20px 0;
+        }
+        p{  
+            text-align:justify;
+            width:70%;
+            margin:auto;
+            position:relative;
+
+            .read-more{
+                position:absolute;
+                bottom:-2rem;
+                right:0;
+            }
+        }
+    }
+}
+
+.download-container{
+    height:10rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    // button -- see components _button.scss
+}
