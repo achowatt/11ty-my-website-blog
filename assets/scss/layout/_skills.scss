@@ -2,11 +2,10 @@
     .content-container{
         display:flex;
         height:auto;
-        padding-bottom:3rem;
+        padding-bottom:6rem;
         .header-right{
-            width:9.7rem;
             text-align:left;
-            padding:3rem 2.5rem;
+            padding:2rem 3rem 2rem 2.5rem;
             box-sizing:content-box;
             background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
             border-radius: 20px 0 0 20px;
@@ -48,17 +47,16 @@
             .icon-container{
                 display:grid;
                 justify-items: center;
-                grid-template-columns: repeat(auto-fit, minmax(3rem,1fr));
-                grid-gap:4rem;
+                grid-template-columns: repeat(4, minmax(2rem,1fr));
                 width:85%;
                 .icon {
                     text-align: center;
                     i {
-                        font-size:4rem;
+                        font-size:max(8vw, 55px);
                         color:var(--icon-color);
                     }
                     p {
-                        font-size:1rem;
+                        font-size:100%;
                     }
                 }
             }

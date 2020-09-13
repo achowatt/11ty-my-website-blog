@@ -31,7 +31,7 @@ html {
   --background-footer: #1A4374;
   --form-input: #00B6FF;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   html {
     font-size: 80%;
   }
@@ -71,9 +71,19 @@ h2 {
   background-image: linear-gradient(to top, var(--heading-color-dark), var(--heading-color-light));
   -webkit-background-clip: text;
   background-clip: text;
-  font-size: calc(2.5vw + 0.5rem);
+  font-size: calc(2.9vw);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 815px) {
+  h2 span {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 814px) {
   h2 {
     font-size: calc(4vw + 0.5rem);
   }
@@ -86,7 +96,7 @@ p, label, a {
 p {
   line-height: 1.5rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   p {
     line-height: 2rem;
   }
@@ -131,7 +141,7 @@ p {
   background: var(--text-color);
   transform: translateY(-5px);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   .button {
     padding: 0.7rem 2rem;
     margin: -10rem;
@@ -212,7 +222,7 @@ nav.sticky .nav-items-container .nav-item:active {
   transform: translateY(10px);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   /* New Nav bar */
   nav.sticky {
     order: -1;
@@ -323,18 +333,15 @@ nav.sticky .nav-items-container .nav-item:active {
   }
 }
 #about {
-  padding-top: 3rem;
+  padding-top: 5rem;
 }
 #about .content-container {
   display: flex;
   height: 70%;
 }
 #about .content-container .header-left {
-  width: 13vw;
-  height: 8rem;
-  margin: auto 0;
   text-align: right;
-  padding: 3rem 2.5rem;
+  padding: 2rem 2rem 2.5rem 3.3rem;
   box-sizing: content-box;
   background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
   border-radius: 0 20px 20px 0;
@@ -350,7 +357,7 @@ nav.sticky .nav-items-container .nav-item:active {
   bottom: -2rem;
   right: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   #about {
     padding-top: 0;
   }
@@ -382,12 +389,12 @@ nav.sticky .nav-items-container .nav-item:active {
 }
 
 .download-container {
-  height: 10rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   .download-container {
     margin-top: 3rem;
     height: 0;
@@ -457,7 +464,7 @@ nav.sticky .nav-items-container .nav-item:active {
 #contact .contact-form .button-submit:hover {
   transform: translateY(-5px);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   #contact {
     background: var(--themed-background-color);
     display: flex;
@@ -611,7 +618,7 @@ header .header--description {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   header {
     font-family: "Raleway", sans-serif;
     height: 100vh;
@@ -666,7 +673,7 @@ header .header--description {
   background: var(--themed-background-color);
   border-radius: 5px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   #projects .header-left {
     width: 90%;
     background: none;
@@ -699,12 +706,11 @@ header .header--description {
 #skills .content-container {
   display: flex;
   height: auto;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 #skills .content-container .header-right {
-  width: 9.7rem;
   text-align: left;
-  padding: 3rem 2.5rem;
+  padding: 2rem 3rem 2rem 2.5rem;
   box-sizing: content-box;
   background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
   border-radius: 20px 0 0 20px;
@@ -727,7 +733,7 @@ header .header--description {
 #skills .content-container .icon-container .icon p {
   font-size: 1rem;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 814px) {
   #skills .content-container {
     display: flex;
     flex-direction: column-reverse;
@@ -754,19 +760,18 @@ header .header--description {
   #skills .content-container .icon-container {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(4, minmax(2rem, 1fr));
     width: 85%;
   }
   #skills .content-container .icon-container .icon {
     text-align: center;
   }
   #skills .content-container .icon-container .icon i {
-    font-size: 4rem;
+    font-size: max(8vw, 55px);
     color: var(--icon-color);
   }
   #skills .content-container .icon-container .icon p {
-    font-size: 1rem;
+    font-size: 100%;
   }
 }
 

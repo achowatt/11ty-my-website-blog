@@ -5,7 +5,13 @@
    }
 }
 
-//use
+@mixin screensize-min-width ($screen) {
+   @media only screen and (min-width:$screen) {
+         @content;
+   }
+}
+
+//How to use example:
 //@include screensize ($mobile) {
 //         display:flex;
 //     }
@@ -28,4 +34,9 @@
       display:flex;
       justify-content: center;
       align-items: center;
+}
+
+//get spans to display block
+@mixin display-block() {
+      display:block;
 }
