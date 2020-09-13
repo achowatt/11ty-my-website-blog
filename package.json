@@ -4,7 +4,7 @@
   "description": "Anna's website and blog",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "sass --style=compressed assets/scss/styles.scss assets/css/styles.css --watch",
+    "watch:sass": "sass --style=expanded assets/scss/styles.scss assets/css/styles.css --watch",
     "watch:serve": "npx eleventy --serve",
     "start": "npm-run-all --parallel watch:*",
     "build": "npx eleventy",

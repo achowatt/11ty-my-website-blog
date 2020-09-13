@@ -2,19 +2,12 @@
     height:30rem;
     background-image: linear-gradient(to top, var(--themed-background-color), var(--main-background-color));
     display:flex;
-
     // left-side
     .content-container{
         width:40%;
         margin: 2rem auto auto auto;
         text-align:end;
-        h2{
-        }
-
-        p{
-        }
     }
-
     //right-side
     .contact-form {
         margin:2rem auto auto auto;
@@ -48,8 +41,6 @@
             }
             &-subject {
                 grid-area: subject;
-                .form-input{
-                }
             }
             &-message {
                 grid-area: message;
@@ -59,17 +50,102 @@
                 }
             }          
         }
-
         .button-submit{
             grid-area:submit;
             text-transform: uppercase;
             margin-top:1rem;
             padding:0.5rem 0.9rem;
             border-radius: 5px;
-            background:var(--text-color-highlight);
+            background: var(--download-button);
+            color: var(--main-background-color);
             border:none;
             cursor:pointer;
             justify-self: end;
-        }  
+            @include box-shadow;
+            transition:all 0.5s;
+            cursor:pointer;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+    @include screensize($mobile){
+        background: var(--themed-background-color);
+        display:flex;
+        flex-direction: column;
+        height:auto;
+        padding-bottom:3rem;
+        // left-side
+        .content-container{
+            width:100%;
+            margin:0;
+            text-align:center;
+            .header {
+                //see mixins
+                @include heading-mobile;
+                margin-bottom:1rem;
+                border-color: var(--main-background-color);
+            }
+            p {
+                width:90%;
+                margin:auto;
+            }
+        }
+        //right-side
+        .contact-form {
+            margin:2rem auto auto auto;
+            width:90%;
+            display:grid;
+            grid-template-areas:
+                "name name"
+                "email email"
+                "subject subject"
+                "message message"
+                "submit submit"
+            ;
+            grid-gap: 0.5rem 2rem;
+            .form-group{
+                .form-label{
+                    display:block;
+                    padding:0.5rem;
+                }
+                .form-input {
+                    width:100%;
+                    height:2.3rem;
+                    padding:0.5rem;
+                    border-radius:3px;
+                    border: solid var(--form-input) 1.7px;
+                }
+    
+                &-name {
+                    grid-area: name;
+                }
+                &-email {
+                    grid-area: email;
+                }
+                &-subject {
+                    grid-area: subject;
+                }
+                &-message {
+                    grid-area: message;
+                    .form-input{
+                        height:10rem;
+                        resize:none;
+                    }
+                }          
+            }
+            .button-submit{
+                grid-area:submit;
+                text-transform: uppercase;
+                margin-top:1rem;
+                padding:0.8rem 1rem;
+                width:100%;
+                border-radius: 3px;
+                border:none;
+                justify-self: center;
+                cursor:pointer;
+            }  
+        }
     }
 }

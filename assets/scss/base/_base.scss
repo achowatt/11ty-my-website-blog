@@ -25,7 +25,7 @@ html {
     --heading-color-dark: #00D7D7;
 
     --icon-color: #2A6398;
-    --download-button: #C5EDFA;
+    --download-button: #00D7D7;
 
     --AC-logo: #00B6FF;
 
@@ -37,6 +37,10 @@ html {
     --background-footer: #1A4374;
 
     --form-input: #00B6FF;
+
+    @include screensize ($mobile) {
+      font-size:80%;
+    }
   }
   
   html[data-theme='dark'] {
@@ -62,6 +66,5 @@ html {
     --download-button: #FF2E00;
 
     --form-input: #FFCA7B;
-  
   }
   

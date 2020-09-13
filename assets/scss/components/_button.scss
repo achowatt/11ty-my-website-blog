@@ -1,9 +1,21 @@
 .button{
     display:inline-block;
-    background: var(--download-button);
     padding:0.7rem;
     border-radius: 5px;
-    color: var(--text-color);
+    background: var(--download-button);
+    color: var(--main-background-color);
+    text-transform: uppercase;
+    @include box-shadow;
+    transition:all 0.5s;
     cursor:pointer;
+
+    &:hover {
+        background: var(--text-color);
+        transform: translateY(-5px);
+    }
     
+    @include screensize ($mobile) {
+        padding:0.7rem 2rem;
+        margin:-10rem;
+    }
 }

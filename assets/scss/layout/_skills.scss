@@ -1,7 +1,8 @@
 #skills {
     .content-container{
         display:flex;
-        height:20rem;
+        height:auto;
+        padding-bottom:3rem;
         .header-right{
             width:9.7rem;
             text-align:left;
@@ -25,6 +26,40 @@
                 }
                 p {
                     font-size:1rem;
+                }
+            }
+        }
+    }
+
+    @include screensize($mobile){
+        .content-container{
+            display:flex;
+            flex-direction: column-reverse;
+            height:auto;
+            background-color: var(--themed-background-color);
+            justify-items: center;
+            align-items: center;
+            padding-bottom:3rem;
+            .header-right{
+                //see mixins
+                @include heading-mobile;
+                border-color: var(--main-background-color);
+            }
+            .icon-container{
+                display:grid;
+                justify-items: center;
+                grid-template-columns: repeat(auto-fit, minmax(3rem,1fr));
+                grid-gap:4rem;
+                width:85%;
+                .icon {
+                    text-align: center;
+                    i {
+                        font-size:4rem;
+                        color:var(--icon-color);
+                    }
+                    p {
+                        font-size:1rem;
+                    }
                 }
             }
         }

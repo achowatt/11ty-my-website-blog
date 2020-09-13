@@ -26,6 +26,24 @@
             }
         }
     }
+    @include screensize ($mobile) {
+        padding-top: 0;
+        .content-container{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            height:100%;
+            .header-left{
+                @include heading-mobile;
+            }
+            p{  
+                width:90%;
+                .read-more{
+                    bottom:-3rem;
+                }
+            }
+        }
+    }
 }
 
 .download-container{
@@ -35,4 +53,11 @@
     align-items: center;
 
     // button -- see components _button.scss
+
+    @include screensize ($mobile) {
+        margin-top:3rem;
+        height:0;
+        padding: 5rem 0;
+
+    }
 }

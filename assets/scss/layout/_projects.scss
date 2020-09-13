@@ -8,20 +8,39 @@
         border-radius: 0 20px 20px 0;
     }
     .content-container{
-        width:95%;
-        margin:auto;
         display:grid;
-        grid-template-columns: repeat(auto-fill, minmax(24rem,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
         padding-top: 2rem;
         padding-bottom: 2rem;
         grid-row-gap: 2rem;
         justify-items: center;
         align-items: center;
         .project {
-            width:22rem;
+            width:23rem;
             height:16rem;
             background: var(--themed-background-color);
             border-radius:5px;
+        }
+    }
+
+    @include screensize ($mobile) {
+        .header-left{
+            @include heading-mobile;
+        }
+        .content-container{
+            display:grid;
+            grid-template-columns: repeat(auto-fill, minmax(23rem,1fr));
+            padding-top: 0;
+            // padding-bottom: 2rem;
+            grid-row-gap: 2rem;
+            justify-items: center;
+            align-items: center;
+            .project {
+                width:90%;
+                height:16rem;
+                background: var(--themed-background-color);
+                border-radius:5px;
+            }
         }
     }
 }

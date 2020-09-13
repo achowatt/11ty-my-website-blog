@@ -1,0 +1,31 @@
+//media query for screensize
+@mixin screensize ($screen) {
+   @media only screen and (max-width:$screen) {
+        @content;
+   }
+}
+
+//use
+//@include screensize ($mobile) {
+//         display:flex;
+//     }
+// }
+
+@mixin box-shadow() {
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.171);
+}
+
+//heading for mobile view
+@mixin heading-mobile() {
+      width:90%;
+      background:none;
+      margin:3rem auto 3rem auto;
+      padding:0;
+      box-sizing:border-box;
+      height:4rem;
+      border: double 4px var(--themed-background-color);
+      border-radius: 10px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+}
