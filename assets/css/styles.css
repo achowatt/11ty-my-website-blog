@@ -480,7 +480,7 @@ nav.sticky .nav-items-container .nav-item:active {
   #contact .content-container {
     width: 100%;
     margin: 0;
-    text-align: center;
+    text-align: start;
   }
   #contact .content-container .header {
     width: 90%;
@@ -502,7 +502,7 @@ nav.sticky .nav-items-container .nav-item:active {
     margin: auto;
   }
   #contact .contact-form {
-    margin: 2rem auto auto auto;
+    margin: 5rem auto auto auto;
     width: 90%;
     display: grid;
     grid-template-areas: "name name" "email email" "subject subject" "message message" "submit submit";
