@@ -15,10 +15,9 @@ header {
     background-blend-mode: screen;
     background-image: linear-gradient(
         to right bottom,
-        #003584,
-        #0085FF
+        #00d7d7, #4637e0
       ),
-      url("images/cropped.jpg");
+      url("../images/cropped.jpg");
   
     background-size: cover;
     background-position: center top;
@@ -29,43 +28,28 @@ header {
   
   .header--description {
     font-size: 1.2rem;
+    background-image: linear-gradient(
+      to right bottom,
+      #003584,
+      #0085FF
+    ),
+    url("../images/cropped.jpg");
     background-size: cover;
     background-position: center top;
     -webkit-background-clip: text;
     background-clip: text;
-    // color: transparent;
+    color: transparent;
     text-transform: uppercase;
   }
 }
 
 @include screensize ($mobile) {
   header {
-      font-family: "Raleway", sans-serif;
       height: 100vh;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: linear-gradient(to top, #E3F7FF,white);
 
     .header--name {
-      font-family: 'Monoton', cursive;
       font-size: 27vw;
-      line-height: 1;
-      background-blend-mode: screen;
-      background-image: linear-gradient(
-          to right bottom,
-          #003584,
-          #0085FF
-        ),
-        url("images/cropped.jpg");
-    
-      background-size: cover;
-      background-position: center top;
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
     }
     
     .header--description {
@@ -74,7 +58,7 @@ header {
       background-position: center top;
       -webkit-background-clip: text;
       background-clip: text;
-      // color: transparent;
+      color: transparent;
       text-transform: uppercase;
     }
   }

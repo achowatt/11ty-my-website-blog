@@ -6,7 +6,13 @@
     .content-container{
         width:40%;
         margin: 2rem auto auto auto;
-        text-align:end;
+        text-align:start;
+
+        .tree {
+            position: absolute;
+            left:0;
+            transform:translateY(15%);
+        }
     }
     //right-side
     .contact-form {

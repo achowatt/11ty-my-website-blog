@@ -410,7 +410,12 @@ nav.sticky .nav-items-container .nav-item:active {
 #contact .content-container {
   width: 40%;
   margin: 2rem auto auto auto;
-  text-align: end;
+  text-align: start;
+}
+#contact .content-container .tree {
+  position: absolute;
+  left: 0;
+  transform: translateY(15%);
 }
 #contact .contact-form {
   margin: 2rem auto auto auto;
@@ -602,7 +607,7 @@ header .header--name {
   font-size: 20vw;
   line-height: 1;
   background-blend-mode: screen;
-  background-image: linear-gradient(to right bottom, #003584, #0085FF), url("images/cropped.jpg");
+  background-image: linear-gradient(to right bottom, #00d7d7, #4637e0), url("../images/cropped.jpg");
   background-size: cover;
   background-position: center top;
   -webkit-background-clip: text;
@@ -611,35 +616,22 @@ header .header--name {
 }
 header .header--description {
   font-size: 1.2rem;
+  background-image: linear-gradient(to right bottom, #003584, #0085FF), url("../images/cropped.jpg");
   background-size: cover;
   background-position: center top;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   text-transform: uppercase;
 }
 
 @media only screen and (max-width: 814px) {
   header {
-    font-family: "Raleway", sans-serif;
     height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to top, #E3F7FF, white);
   }
   header .header--name {
-    font-family: "Monoton", cursive;
     font-size: 27vw;
-    line-height: 1;
-    background-blend-mode: screen;
-    background-image: linear-gradient(to right bottom, #003584, #0085FF), url("images/cropped.jpg");
-    background-size: cover;
-    background-position: center top;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
   header .header--description {
     font-size: 1rem;
@@ -647,6 +639,7 @@ header .header--description {
     background-position: center top;
     -webkit-background-clip: text;
     background-clip: text;
+    color: transparent;
     text-transform: uppercase;
   }
 }
