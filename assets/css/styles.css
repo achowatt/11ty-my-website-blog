@@ -918,7 +918,7 @@ html[data-theme=dark] {
   align-items: center;
   font-family: "Unica One", cursive;
   position: fixed;
-  right: calc(100vw - 1000px);
+  right: calc(100vw - 1000px + -6.5rem);
 }
 #blog-page section nav .btn {
   display: flex;
