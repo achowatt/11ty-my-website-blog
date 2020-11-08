@@ -879,16 +879,19 @@ html[data-theme=dark] {
   display: block;
 }
 #blog-page section {
-  display: flex;
   margin-top: 1.5rem;
   position: relative;
+}
+#blog-page section main {
+  display: inline-block;
+  width: calc(100% - 8rem);
+  float: left;
 }
 #blog-page section main article {
   background-color: #EAF3E6;
   margin: 0 1.5rem 1.5rem 0;
   padding: 1rem;
   border: 3px solid #C6D9BD;
-  width: calc(100% - 10rem);
 }
 #blog-page section main article header {
   font-family: "Unica One", cursive;
@@ -913,12 +916,13 @@ html[data-theme=dark] {
   background-color: #FFFFFF;
 }
 #blog-page section nav {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   font-family: "Unica One", cursive;
-  position: fixed;
-  right: calc(100vw - 1000px + -6.5rem);
+  position: sticky;
+  top: 1.5rem;
+  left: 0;
 }
 #blog-page section nav .btn {
   display: flex;
@@ -968,8 +972,10 @@ html[data-theme=dark] {
     padding-top: 1rem;
     display: block;
   }
-  #blog-page section {
-    display: flex;
+  #blog-page section main {
+    display: inline-block;
+    width: calc(100% - 8rem);
+    float: left;
   }
   #blog-page section article {
     background-color: #EAF3E6;
@@ -993,15 +999,6 @@ html[data-theme=dark] {
   }
   #blog-page section article:nth-of-type(even) {
     background-color: #FFFFFF;
-  }
-  #blog-page section nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1.5rem 0;
-    font-family: "Unica One", cursive;
-    right: 2rem;
-    transform: translateY(-1.5rem);
   }
   #blog-page section nav .btn {
     display: flex;

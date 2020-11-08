@@ -40,16 +40,18 @@
     }//END OF HEADER
 
     section{
-        display:flex;
         margin-top: 1.5rem;
         position: relative;
         main {
+            display: inline-block;
+            width: calc(100% - 8rem);
+            float: left;
             article {
                 background-color: #EAF3E6;
                 margin: 0 1.5rem 1.5rem 0;
                 padding:1rem;
                 border: 3px solid #C6D9BD;
-                width: calc(100% - 10rem);
+                // width: calc(100% - 10rem);
                 header {
                     font-family: "Unica One", cursive;
                     display: inline-block;
@@ -77,13 +79,14 @@
         }
 
         nav {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             align-items: center;
             // margin:1.5rem 0;
             font-family: "Unica One", cursive;
-            position: fixed;
-            right: calc(100vw - 1000px + -6.5rem);
+            position: sticky;
+            top:1.5rem;
+            left:0;
             .btn {
                 display: flex;
                 align-items: center;
@@ -143,7 +146,11 @@
         }//END OF HEADER
     
         section{
-            display:flex;
+            main{
+                display: inline-block;
+                width: calc(100% - 8rem);
+                float: left;
+            }
             article {
                 background-color: #EAF3E6;
                 margin: 0 1rem 1rem 0;
@@ -169,13 +176,6 @@
             }
     
             nav {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin:1.5rem 0;
-                font-family: "Unica One", cursive;
-                right: 2rem;
-                transform: translateY(-1.5rem);
                 .btn {
                     display: flex;
                     align-items: center;
