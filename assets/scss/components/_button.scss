@@ -1,21 +1,30 @@
-.button{
-    display:inline-block;
-    padding:0.7rem;
-    border-radius: 5px;
-    background: var(--download-button);
-    color: var(--main-background-color);
-    text-transform: uppercase;
-    @include box-shadow;
-    transition:all 0.5s;
-    cursor:pointer;
+/***** HOME PAGE *****/
+#home-page { 
+    .button{
+        display:inline-block;
+        padding:0.7rem;
+        border-radius: 5px;
+        // background: var(--download-button);
+        // color: var(--main-background-color);
+        border: solid 2px #7E6969;
+        text-transform: uppercase;
+        @include box-shadow;
+        transition:all 0.5s;
+        cursor:pointer;
 
-    &:hover {
-        background: var(--text-color);
-        transform: translateY(-5px);
+        &:hover {
+            background: var(--text-color);
+            transform: translateY(-5px);
+            color:white;
+        }
+
+        &:focus{
+            outline: 1px dashed green;
+        }
+        
+        @include screensize ($mobile) {
+            padding:0.7rem 2rem;
+            margin:-10rem;
+        }
     }
-    
-    @include screensize ($mobile) {
-        padding:0.7rem 2rem;
-        margin:-10rem;
-    }
-}
+}/***** END OF HOME-PAGE *****/

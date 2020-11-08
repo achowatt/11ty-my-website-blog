@@ -1,46 +1,53 @@
-#projects {
-    .header-left{
-        display:inline-block;
-        text-align:right;
-        padding:1rem 2.5rem;
-        box-sizing:content-box;
-        background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
-        border-radius: 0 20px 20px 0;
-    }
-    .content-container{
-        display:grid;
-        grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        grid-row-gap: 2rem;
-        justify-items: center;
-        align-items: center;
-        .project {
-            width:23rem;
-            height:16rem;
-            background: var(--themed-background-color);
-            border-radius:5px;
-        }
-    }
-
-    @include screensize ($mobile) {
+/***** HOME PAGE *****/
+#home-page { 
+    #projects {
         .header-left{
-            @include heading-mobile;
+            display:inline-block;
+            text-align:right;
+            padding:1rem 2.5rem;
+            box-sizing:content-box;
+            background-color: var(--themed-background-color);
+            // background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
+            // border-radius: 0 20px 20px 0;
+            outline: 1px solid var(--text-color);
+            outline-offset: -10px;
+            box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.25);
         }
         .content-container{
             display:grid;
-            grid-template-columns: repeat(auto-fill, minmax(23rem,1fr));
-            padding-top: 0;
-            // padding-bottom: 2rem;
+            grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
+            padding-top: 2rem;
+            padding-bottom: 2rem;
             grid-row-gap: 2rem;
             justify-items: center;
             align-items: center;
             .project {
-                width:90%;
+                width:23rem;
                 height:16rem;
                 background: var(--themed-background-color);
                 border-radius:5px;
             }
         }
+
+        @include screensize ($mobile) {
+            .header-left{
+                @include heading-mobile;
+            }
+            .content-container{
+                display:grid;
+                grid-template-columns: repeat(auto-fill, minmax(23rem,1fr));
+                padding-top: 0;
+                // padding-bottom: 2rem;
+                grid-row-gap: 2rem;
+                justify-items: center;
+                align-items: center;
+                .project {
+                    width:90%;
+                    height:16rem;
+                    background: var(--themed-background-color);
+                    border-radius:5px;
+                }
+            }
+        }
     }
-}
+}/***** END OF HOME-PAGE *****/

@@ -1,45 +1,45 @@
 /** All the text **/
 
 /* Declaring Variables */
-html {
+/***** HOME PAGE *****/
+#home-page { 
     /* Default font-family */
     font-family: 'Raleway', sans-serif;
 
     /* Font-variable */
     --AC-logo-font: 'Parisienne', cursive;
-    --header-font: 'Monoton', cursive;
-}
+    --header-font: 'Nixie One', cursive;
 
-h2 {
-    font-family: var(--header-font);
-    color:transparent;
-    background-image:linear-gradient(to top, var(--heading-color-dark), var(--heading-color-light));
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-size:calc(2.9vw);
-
-    @include screensize-min-width ($not-mobile) {
-        span {
-            @include display-block;
+    h2 {
+        font-family: var(--header-font);
+        // color:transparent;
+        // background-image:linear-gradient(to top, var(--heading-color-dark), var(--heading-color-light));
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size:2.5rem;
+    
+        @include screensize-min-width ($not-mobile) {
+            span {
+                @include display-block;
+            }
+        }
+    
+        @include screensize (1000px){
+            font-size: 2rem;
+        }
+        @include screensize ($mobile) {
+            font-size:calc(4vw + 0.5rem);
         }
     }
-
-    @include screensize (1000px){
-        font-size: 2rem;
+    
+    p,label,a {
+        color: var(--text-color);
     }
-    @include screensize ($mobile) {
-        font-size:calc(4vw + 0.5rem);
-    }
-}
-
-p,label,a {
-    color: var(--text-color);
-}
-
-p {
-    line-height: 1.5rem;
-    @include screensize ($mobile) {
-        line-height: 2rem;
-    }
-}
-
+    
+    p {
+        line-height: 1.5rem;
+        @include screensize ($mobile) {
+            line-height: 2rem;
+        }
+    }    
+}/***** END OF HOME PAGE *****/

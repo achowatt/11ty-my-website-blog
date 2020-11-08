@@ -1,62 +1,79 @@
-#about {
-    padding-top: 5rem;
-    .content-container{
-        display:flex;
-        height:70%;
-
-        .header-left{
-            text-align:right;
-            padding:2rem 2rem 2.5rem 3.3rem;
-            box-sizing:content-box;
-            background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
-            border-radius: 0 20px 20px 0;
-        }
-
-        p{  
-            text-align:justify;
-            width:70%;
-            margin:auto;
-            position:relative;
-
-            .read-more{
-                position:absolute;
-                bottom:-2rem;
-                right:0;
-            }
-        }
-    }
-    @include screensize ($mobile) {
-        padding-top: 0;
+/***** HOME PAGE *****/
+#home-page { 
+    #about {
+        padding-top: 5rem;
         .content-container{
             display:flex;
-            flex-direction: column;
-            justify-content: center;
-            height:100%;
+            height:70%;
+
             .header-left{
-                @include heading-mobile;
+                text-align:right;
+                width: 12rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-sizing:content-box;
+                background-color:var(--themed-background-color);
+                // background-image: linear-gradient(to bottom, var(--themed-background-color), var(--main-background-color));
+                // border-radius: 0 20px 20px 0;
+                outline: 1px solid var(--text-color);
+                outline-offset: -10px;
+                box-shadow: -5px 8px 19px rgba(0, 0, 0, 0.25);
             }
+
             p{  
-                width:90%;
+                text-align:justify;
+                width:73%;
+                margin:auto;
+                position:relative;
+
                 .read-more{
-                    bottom:-3rem;
+                    position:absolute;
+                    bottom:-2rem;
+                    right:0;
+                    color:#EB8740;
+                    cursor: pointer;
+                    background:none;
+                    border: none;
+                    &:focus {
+                        outline: 1px dashed green;
+                    }
+                }
+            }
+        }
+        @include screensize ($mobile) {
+            padding-top: 0;
+            .content-container{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                height:100%;
+                .header-left{
+                    @include heading-mobile;
+                }
+                p{  
+                    width:90%;
+                    .read-more{
+                        bottom:-3rem;
+                    }
                 }
             }
         }
     }
-}
 
-.download-container{
-    height:15rem;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    .download-container{
+        height:15rem;
+        display:flex;
+        justify-content: center;
+        align-items: center;
 
-    // button -- see components _button.scss
+        // button -- see components _button.scss
 
-    @include screensize ($mobile) {
-        margin-top:3rem;
-        height:0;
-        padding: 5rem 0;
+        @include screensize ($mobile) {
+            margin-top:3rem;
+            height:0;
+            padding: 5rem 0;
 
+        }
     }
-}
+}/*****END OF HOME PAGE *****/
