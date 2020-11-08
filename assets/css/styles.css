@@ -844,11 +844,12 @@ html[data-theme=dark] {
   max-width: 1000px;
   background-image: url("../images/cutethings.png");
   padding: 1.5rem;
+  padding-top: 0;
 }
 #blog-page header h1 {
   font-family: "Nixie One", cursive;
   color: #3F5B38;
-  padding: 2rem 0;
+  padding: 1rem 0;
   text-align: center;
   font-size: 4rem;
   text-transform: uppercase;
@@ -880,12 +881,14 @@ html[data-theme=dark] {
 #blog-page section {
   display: flex;
   margin-top: 1.5rem;
+  position: relative;
 }
 #blog-page section main article {
   background-color: #EAF3E6;
   margin: 0 1.5rem 1.5rem 0;
   padding: 1rem;
   border: 3px solid #C6D9BD;
+  width: calc(100% - 10rem);
 }
 #blog-page section main article header {
   font-family: "Unica One", cursive;
@@ -913,8 +916,9 @@ html[data-theme=dark] {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.5rem 0;
   font-family: "Unica One", cursive;
+  position: fixed;
+  right: calc(100vw - 1000px);
 }
 #blog-page section nav .btn {
   display: flex;
@@ -922,8 +926,8 @@ html[data-theme=dark] {
   justify-content: center;
   text-align: center;
   margin-bottom: 10px;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
   border-radius: 10px;
 }
 #blog-page section nav .btn:not(.design) {
@@ -996,6 +1000,8 @@ html[data-theme=dark] {
     align-items: center;
     margin: 1.5rem 0;
     font-family: "Unica One", cursive;
+    right: 2rem;
+    transform: translateY(-1.5rem);
   }
   #blog-page section nav .btn {
     display: flex;
