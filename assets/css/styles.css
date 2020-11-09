@@ -885,11 +885,6 @@ html[data-theme=dark] {
 #blog-page section main {
   width: calc(100% - 8rem);
   float: left;
-  height: 95vh;
-  overflow-y: auto;
-}
-#blog-page section main::-webkit-scrollbar {
-  display: none;
 }
 #blog-page section main article {
   background-color: #EAF3E6;
@@ -924,6 +919,9 @@ html[data-theme=dark] {
   flex-direction: column;
   align-items: center;
   font-family: "Unica One", cursive;
+  position: sticky;
+  top: 1.5rem;
+  left: 0;
 }
 #blog-page section nav .btn {
   display: flex;
@@ -976,33 +974,28 @@ html[data-theme=dark] {
   #blog-page section main {
     width: calc(100% - 8rem);
     float: left;
-    height: calc(100vh - 2rem);
-    overflow-y: auto;
   }
-  #blog-page section main::-webkit-scrollbar {
-    display: none;
-  }
-  #blog-page section article {
+  #blog-page section main article {
     background-color: #EAF3E6;
     margin: 0 1rem 1rem 0;
     padding: 1rem;
     border: 3px solid #C6D9BD;
   }
-  #blog-page section article header {
+  #blog-page section main article header {
     font-family: "Unica One", cursive;
     display: inline-block;
     border: 1px solid black;
     background-color: white;
     padding: 0.6rem;
   }
-  #blog-page section article p {
+  #blog-page section main article p {
     font-family: "Nixie One", cursive;
     height: 5rem;
     margin-top: 1rem;
     min-height: 5rem;
     height: auto;
   }
-  #blog-page section article:nth-of-type(even) {
+  #blog-page section main article:nth-of-type(even) {
     background-color: #FFFFFF;
   }
   #blog-page section nav .btn {
