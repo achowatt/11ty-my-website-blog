@@ -840,9 +840,11 @@ html[data-theme=dark] {
   }
 }
 
+#blog-page {
+  background-image: url("../images/cutethings.png");
+}
 #blog-page body {
   max-width: 1000px;
-  background-image: url("../images/cutethings.png");
   padding: 0 1.5rem;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -998,10 +1000,11 @@ html[data-theme=dark] {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
+  height: 2rem;
 }
 #blog-page footer .design {
   font-family: "Montserrat", sans-serif;
+  font-size: 0.6rem;
 }
 @media only screen and (max-width: 620px) {
   #blog-page body {
