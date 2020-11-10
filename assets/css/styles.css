@@ -843,8 +843,9 @@ html[data-theme=dark] {
 #blog-page body {
   max-width: 1000px;
   background-image: url("../images/cutethings.png");
-  padding: 1.5rem;
-  padding-top: 0;
+  padding: 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 #blog-page header h1 {
   font-family: "Nixie One", cursive;
@@ -860,6 +861,7 @@ html[data-theme=dark] {
   }
 }
 #blog-page header div.blog-purpose-container {
+  border-radius: 4px;
   background-color: white;
   border: dashed #B6D1C6 2px;
   padding: 10px;
@@ -872,7 +874,6 @@ html[data-theme=dark] {
   min-width: 300px;
   text-align: center;
   line-height: 1.5rem;
-  font-family: "Montserrat", sans-serif;
 }
 #blog-page header div.blog-purpose-container p span {
   padding-top: 1rem;
@@ -880,6 +881,7 @@ html[data-theme=dark] {
 }
 #blog-page section {
   margin-top: 1.5rem;
+  margin-bottom: 4rem;
   position: relative;
 }
 #blog-page section main {
@@ -888,24 +890,44 @@ html[data-theme=dark] {
 }
 #blog-page section main article {
   background-color: #EAF3E6;
+  border-radius: 4px;
   margin: 0 1.5rem 1.5rem 0;
   padding: 1rem;
   border: 3px solid #C6D9BD;
 }
 #blog-page section main article header {
   font-family: "Unica One", cursive;
+  border-radius: 4px;
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid #dedede;
   background-color: white;
   padding: 0.6rem;
+  text-align: right;
+}
+#blog-page section main article header a:link, #blog-page section main article header a:visited, #blog-page section main article header a:active {
+  font-size: 1.3rem;
+  color: black;
+  text-decoration: none;
+}
+#blog-page section main article header hr {
+  border-top: 1px solid #dedede;
+}
+#blog-page section main article header time {
+  font-size: 0.8rem;
+  text-align: right;
+  color: #c9ae78;
 }
 #blog-page section main article header:hover {
-  background-color: rgba(0, 0, 0, 0.548);
+  background-color: rgba(0, 0, 0, 0.623);
+  border-color: white;
+  color: white;
+}
+#blog-page section main article header:hover a:link, #blog-page section main article header:hover a:visited, #blog-page section main article header:hover a:hover, #blog-page section main article header:hover a:active {
   color: white;
   cursor: pointer;
 }
 #blog-page section main article p {
-  font-family: "Nixie One", cursive;
+  font-family: "Montserrat", sans-serif;
   height: 5rem;
   margin-top: 1rem;
   min-height: 5rem;
@@ -918,12 +940,12 @@ html[data-theme=dark] {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Unica One", cursive;
   position: sticky;
   top: 1.5rem;
   left: 0;
 }
 #blog-page section nav .btn {
+  font-family: "Unica One", cursive;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -932,21 +954,54 @@ html[data-theme=dark] {
   height: 8rem;
   width: 8rem;
   border-radius: 10px;
+  border: none;
+  font-size: 1rem;
 }
 #blog-page section nav .btn:not(.design) {
   cursor: pointer;
 }
-#blog-page section nav .btn.back-to-main-btn {
+#blog-page section nav .btn.back-to-main {
   background-color: #E0D0B1;
   color: black;
 }
-#blog-page section nav .btn.contact-info-btn {
+#blog-page section nav .btn.contact-info {
   background-color: #FFDC98;
   color: black;
 }
-#blog-page section nav .btn.design {
-  background-color: #3F5B38;
-  color: white;
+#blog-page section nav .btn.contact-info.clicked {
+  position: fixed;
+  max-width: 50rem;
+  max-height: 42rem;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#blog-page section nav .btn.back-to-top {
+  border: 1px dashed #3F5B38;
+  background-color: white;
+  color: black;
+  display: none;
+}
+#blog-page section nav .btn.back-to-top:focus {
+  outline: none;
+}
+#blog-page footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #EAF3E6;
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+#blog-page footer .design {
+  font-family: "Montserrat", sans-serif;
 }
 @media only screen and (max-width: 620px) {
   #blog-page body {
@@ -965,7 +1020,6 @@ html[data-theme=dark] {
     min-width: 200px;
     text-align: center;
     line-height: 1.5rem;
-    font-family: "Montserrat", sans-serif;
   }
   #blog-page header div.blog-purpose-container p span {
     padding-top: 1rem;
@@ -976,27 +1030,17 @@ html[data-theme=dark] {
     float: left;
   }
   #blog-page section main article {
-    background-color: #EAF3E6;
     margin: 0 1rem 1rem 0;
     padding: 1rem;
-    border: 3px solid #C6D9BD;
   }
   #blog-page section main article header {
-    font-family: "Unica One", cursive;
-    display: inline-block;
-    border: 1px solid black;
-    background-color: white;
     padding: 0.6rem;
   }
   #blog-page section main article p {
-    font-family: "Nixie One", cursive;
     height: 5rem;
     margin-top: 1rem;
     min-height: 5rem;
     height: auto;
-  }
-  #blog-page section main article:nth-of-type(even) {
-    background-color: #FFFFFF;
   }
   #blog-page section nav .btn {
     display: flex;
@@ -1008,18 +1052,10 @@ html[data-theme=dark] {
     width: 8rem;
     border-radius: 10px;
   }
-  #blog-page section nav .btn.back-to-main-btn {
-    background-color: #E0D0B1;
-    color: black;
-  }
-  #blog-page section nav .btn.contact-info-btn {
-    background-color: #FFDC98;
-    color: black;
-  }
-  #blog-page section nav .btn.design {
-    background-color: #3F5B38;
-    color: white;
-  }
+}
+
+.stopScroll {
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */

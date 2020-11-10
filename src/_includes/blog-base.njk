@@ -18,7 +18,6 @@
                 cheat sheet about set-up, and understanding specific concepts related
                 to front-end web development. This is mainly for myself but
                 if you do find my blog useful, feel free to use it as you please!
-                
                 <span>
                 - Anna Chowattanakul
                 </span>
@@ -27,41 +26,25 @@
     </header>
     <section>
         <main>
-            <article>
-                <header>How to set up Sass</header>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit”</p>
-            </article>
-            <article>
-                <header>Jquery syntax vs javascript Dom</header>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit”</p>
-            </article>
-            <article>
-                <header>Some other topic</header>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit”</p>
-            </article>
-                        <article>
-                <header>Some other topic</header>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit”</p>
-            </article>
-                        <article>
-                <header>Some other topic</header>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit”</p>
-            </article>
-                        <article>
-                <header>Some other topic</header>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercit”</p>
-            </article>
+            {{ content | safe }}
         </main>
-
         <nav>
-            <a class="btn back-to-main-btn" href="/">
+            <a class="btn back-to-main" href="/">
                 Back to my main website
             </a>
-            <a class="btn contact-info-btn">
+            <button class="btn contact-info">
                 Contact Info
-            </a>
-            <div class="btn design">Designed by Anna Chowattanakul</div>
+            </button>
+            <button class="btn back-to-top">
+                Back to top
+            </button>
         </nav>
     </section>
+    <footer>
+        <p class="design">Designed by Anna Chowattanakul</p>
+    </footer>
 </body>
+<script>
+{% include "js/blog.js" %}
+</script>
 </html>
