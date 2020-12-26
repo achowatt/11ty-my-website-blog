@@ -1,17 +1,23 @@
 #blog-page {
-    background-image: url("../images/cutethings.png");
 
     body{
         max-width: 1000px;
         padding: 0 1.5rem;
-        font-family: 'Montserrat', sans-serif;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: 'Love Ya Like A Sister', cursive;
+        color:white;
         font-weight: bold;
+        background-color: rgb(29, 26, 26);
+        // background-image: url("../images/cutethings.png");
     }
     header {
+        // background-color: rgba(255, 255, 255, 0.637);
         h1 {
-            font-family: "Nixie One", cursive;
-            color:#3F5B38;
-            padding: 1rem 0;
+            // font-family: "Nixie One", cursive;
+            font-family: 'Fredericka the Great';
+            padding: 5rem 0 3rem;
+            // color:#3F5B38;
+            color:white;
             text-align: center;
             font-size: 4rem;
             text-transform: uppercase;
@@ -19,11 +25,12 @@
                 font-size: 6.4vw;
             }
         }
+        .blog-post-title {
+            text-align: start;
+        }
         div.blog-purpose-container {
             border-radius: 4px;
-            background-color:white;
-            border: dashed  #B6D1C6 2px;
-            // background-color: #B6D1C6;
+            border: solid #c9ae78 2px;
             padding:10px;
             display:flex;
             justify-content:center;
@@ -49,26 +56,32 @@
             width: calc(100% - 8rem);
             float: left;
             article {
-                background-color: #EAF3E6;
+                // background-color: #EAF3E6;
+                background-color: #353535;
                 border-radius: 4px;
                 margin: 0 1.5rem 1.5rem 0;
                 padding:1rem;
-                border: 3px solid #C6D9BD;
+                // border: 3px solid #C6D9BD;
                 // width: calc(100% - 10rem);
+                a:link, a:visited, a:active{
+                    font-size: 1.3rem;
+                    text-decoration: none;
+                }
+                a:link, a:visited, a:hover, a:active{
+                    color:white;
+                    cursor: pointer;
+                }
                 header {
-                    font-family: "Unica One", cursive;
+                    // font-family: "Unica One", cursive;
                     border-radius: 4px;
                     display: inline-block;
                     border: 1px solid #dedede;
-                    background-color:white;
+                    // background-color:white;
                     padding: 0.6rem;
                     text-align: right;
+                    // color:rgb(70, 70, 70);
+                    color:white;
 
-                    a:link, a:visited, a:active{
-                        font-size: 1.3rem;
-                        color:black;
-                        text-decoration: none;
-                    }
                     hr {
                         border-top: 1px solid #dedede;
                     }
@@ -82,17 +95,12 @@
                     &:hover{
                         background-color: rgba(0, 0, 0, 0.623);
                         border-color: white;
-                        color: white;
-
-                        a:link, a:visited, a:hover, a:active{
-                            color:white;
-                            cursor: pointer;
-                        }
+                        color:#c37878;
                     }
                 }
                 p {
                     // font-family: "Nixie One", cursive;
-                    font-family: "Montserrat", sans-serif;
+                    // font-family: "Montserrat", sans-serif;
                     height:5rem;
                     margin-top:1rem;
                     min-height: 5rem;
@@ -100,7 +108,8 @@
                 }
 
                 &:nth-of-type(even) {
-                    background-color: #FFFFFF;
+                    // background-color: #FFFFFF;
+                    background-color: #000000;
                 }
             }
         }
@@ -131,31 +140,53 @@
                     cursor: pointer;
                 }
                 &.back-to-main{
-                    background-color: #E0D0B1;
-                    color:black;
-                }
-                &.contact-info{
-                    background-color: #FFDC98;
-                    color:black;
-                    &.clicked {
-                        position: fixed;
-                        max-width: 50rem;
-                        max-height: 42rem;
-                        width:100%;
-                        height:100%;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
+                    color: #c9ae78;
+                    border: solid 2px #c9ae78;
+
+
+                    &:hover{
+                        color:black;
+                        background-color: #c9ae78;
                     }
                 }
-
+                // &.contact-info{
+                //     background-color: #FFDC98;
+                //     color:black;
+                //     &.clicked {
+                //         position: fixed;
+                //         max-width: 50rem;
+                //         max-height: 42rem;
+                //         width:100%;
+                //         height:100%;
+                //         top: 50%;
+                //         left: 50%;
+                //         transform: translate(-50%, -50%);
+                //     }
+                // }
+                &.see-other-blogs {
+                    // border: 1px dashed #3F5B38;
+                    height:auto;
+                    color:rgb(255, 102, 0);
+                    text-decoration: none;
+                    margin-bottom: 3rem;
+                    &:hover {
+                        color:white;
+                    }
+                }
                 &.back-to-top{
-                    border: 1px dashed #3F5B38;
-                    background-color: white;
-                    color:black;
+                    // border: 1px dashed #3F5B38;
+                    // background-color: white;
+                    position: relative;
+                    left: 0.1rem;
+                    background: none;
+                    color: #c9ae78;
+                    height:auto;
                     display:none;
                     &:focus{
                         outline: none;
+                    }
+                    &:hover {
+                        color:white;
                     }
                 }
             }

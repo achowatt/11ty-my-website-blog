@@ -1,5 +1,5 @@
 ---
-layout: blog-base.njk 
+layout: blog-layout.njk 
 title: This Is My SECOND POST
 date: 2019-05-30
 tags: ['post']

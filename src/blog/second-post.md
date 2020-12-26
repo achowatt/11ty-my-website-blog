@@ -1,7 +1,7 @@
 ---
-layout: blog-base.njk 
+layout: blog-layout.njk 
 title: Place Holder
-date: 2019-05-30
+date: 2019-01-04
 tags: ['post']
 ---
 <!-- Excerpt Start -->

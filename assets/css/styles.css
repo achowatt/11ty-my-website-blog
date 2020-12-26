@@ -840,19 +840,18 @@ html[data-theme=dark] {
   }
 }
 
-#blog-page {
-  background-image: url("../images/cutethings.png");
-}
 #blog-page body {
   max-width: 1000px;
   padding: 0 1.5rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Love Ya Like A Sister", cursive;
+  color: white;
   font-weight: bold;
+  background-color: #1d1a1a;
 }
 #blog-page header h1 {
-  font-family: "Nixie One", cursive;
-  color: #3F5B38;
-  padding: 1rem 0;
+  font-family: "Fredericka the Great";
+  padding: 5rem 0 3rem;
+  color: white;
   text-align: center;
   font-size: 4rem;
   text-transform: uppercase;
@@ -862,10 +861,12 @@ html[data-theme=dark] {
     font-size: 6.4vw;
   }
 }
+#blog-page header .blog-post-title {
+  text-align: start;
+}
 #blog-page header div.blog-purpose-container {
   border-radius: 4px;
-  background-color: white;
-  border: dashed #B6D1C6 2px;
+  border: solid #c9ae78 2px;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -891,25 +892,26 @@ html[data-theme=dark] {
   float: left;
 }
 #blog-page section main article {
-  background-color: #EAF3E6;
+  background-color: #353535;
   border-radius: 4px;
   margin: 0 1.5rem 1.5rem 0;
   padding: 1rem;
-  border: 3px solid #C6D9BD;
+}
+#blog-page section main article a:link, #blog-page section main article a:visited, #blog-page section main article a:active {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+#blog-page section main article a:link, #blog-page section main article a:visited, #blog-page section main article a:hover, #blog-page section main article a:active {
+  color: white;
+  cursor: pointer;
 }
 #blog-page section main article header {
-  font-family: "Unica One", cursive;
   border-radius: 4px;
   display: inline-block;
   border: 1px solid #dedede;
-  background-color: white;
   padding: 0.6rem;
   text-align: right;
-}
-#blog-page section main article header a:link, #blog-page section main article header a:visited, #blog-page section main article header a:active {
-  font-size: 1.3rem;
-  color: black;
-  text-decoration: none;
+  color: white;
 }
 #blog-page section main article header hr {
   border-top: 1px solid #dedede;
@@ -922,21 +924,16 @@ html[data-theme=dark] {
 #blog-page section main article header:hover {
   background-color: rgba(0, 0, 0, 0.623);
   border-color: white;
-  color: white;
-}
-#blog-page section main article header:hover a:link, #blog-page section main article header:hover a:visited, #blog-page section main article header:hover a:hover, #blog-page section main article header:hover a:active {
-  color: white;
-  cursor: pointer;
+  color: #c37878;
 }
 #blog-page section main article p {
-  font-family: "Montserrat", sans-serif;
   height: 5rem;
   margin-top: 1rem;
   min-height: 5rem;
   height: auto;
 }
 #blog-page section main article:nth-of-type(even) {
-  background-color: #FFFFFF;
+  background-color: #000000;
 }
 #blog-page section nav {
   display: inline-flex;
@@ -963,31 +960,35 @@ html[data-theme=dark] {
   cursor: pointer;
 }
 #blog-page section nav .btn.back-to-main {
-  background-color: #E0D0B1;
-  color: black;
+  color: #c9ae78;
+  border: solid 2px #c9ae78;
 }
-#blog-page section nav .btn.contact-info {
-  background-color: #FFDC98;
+#blog-page section nav .btn.back-to-main:hover {
   color: black;
+  background-color: #c9ae78;
 }
-#blog-page section nav .btn.contact-info.clicked {
-  position: fixed;
-  max-width: 50rem;
-  max-height: 42rem;
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#blog-page section nav .btn.see-other-blogs {
+  height: auto;
+  color: #ff6600;
+  text-decoration: none;
+  margin-bottom: 3rem;
+}
+#blog-page section nav .btn.see-other-blogs:hover {
+  color: white;
 }
 #blog-page section nav .btn.back-to-top {
-  border: 1px dashed #3F5B38;
-  background-color: white;
-  color: black;
+  position: relative;
+  left: 0.1rem;
+  background: none;
+  color: #c9ae78;
+  height: auto;
   display: none;
 }
 #blog-page section nav .btn.back-to-top:focus {
   outline: none;
+}
+#blog-page section nav .btn.back-to-top:hover {
+  color: white;
 }
 #blog-page footer {
   position: fixed;

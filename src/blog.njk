@@ -9,7 +9,7 @@ pagination:
 
 {% for post in posts %}
   <article>
-    <header><a href="{{ post.url | url }}" aria-label="Read more on {{ post.data.title }}">{{ post.data.title }}</a><hr><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></header>
+    <a href="{{ post.url | url }}" aria-label="Read more on {{ post.data.title }}"><header>{{ post.data.title }}<hr><time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time></header></a>
       {% excerpt post %}
   </article>
 {% endfor %}

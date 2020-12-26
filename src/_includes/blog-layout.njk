@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" id="blog-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna's Blog | HOME</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Unica+One&family=Parisienne&family=Raleway:wght@300&family=Nixie+One&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25f692c22b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="blog-post-title">{{title}}</h1>
+        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
+    </header>
+    <section>
+        <main>{{ content | safe }}</main>
+        <nav>
+            <a class="btn see-other-blogs" href="/blog">
+                Back to Previous Page
+            </a>
+            <button class="btn back-to-top">
+                Back to top &#8673;
+            </button>
+        </nav>
+    </section>
+    <footer>
+        <p class="design">Welcome to Anna Chowattanakul's Blog!</p>
+    </footer>
+</body>
+<script>
+{% include "js/blog.js" %}
+</script>
+</html>
