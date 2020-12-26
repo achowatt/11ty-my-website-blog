@@ -863,6 +863,7 @@ html[data-theme=dark] {
 }
 #blog-page header .blog-post-title {
   text-align: start;
+  color: #c9ae78;
 }
 #blog-page header div.blog-purpose-container {
   border-radius: 4px;
