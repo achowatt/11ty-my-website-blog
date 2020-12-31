@@ -132,6 +132,7 @@ html[data-theme=dark] {
   display: inline-block;
   padding: 0.7rem;
   border-radius: 5px;
+  text-decoration: none;
   border: solid 2px #7E6969;
   text-transform: uppercase;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.171);
@@ -356,8 +357,6 @@ html[data-theme=dark] {
   align-items: center;
   box-sizing: content-box;
   background-color: var(--themed-background-color);
-  outline: 1px solid var(--text-color);
-  outline-offset: -10px;
   box-shadow: -5px 8px 19px rgba(0, 0, 0, 0.25);
 }
 #home-page #about .content-container p {
@@ -650,7 +649,7 @@ html[data-theme=dark] {
   justify-content: top;
   justify-content: center;
   align-items: center;
-  background: url("../images/bench-accounting-nvzvOPQW0gc-unsplash.jpg") no-repeat bottom;
+  background: url("https://res.cloudinary.com/djv69vvs7/image/upload/v1609222676/interiordesign/bench-accounting-nvzvOPQW0gc-unsplash-1_yeyrs3.jpg") no-repeat bottom;
   background-size: cover;
 }
 #home-page header .header--name {
@@ -712,8 +711,6 @@ html[data-theme=dark] {
   padding: 1rem 2.5rem;
   box-sizing: content-box;
   background-color: var(--themed-background-color);
-  outline: 1px solid var(--text-color);
-  outline-offset: -10px;
   box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.25);
 }
 #home-page #projects .content-container {
@@ -776,8 +773,6 @@ html[data-theme=dark] {
   align-items: center;
   box-sizing: content-box;
   background-color: var(--themed-background-color);
-  outline: 1px solid var(--text-color);
-  outline-offset: -10px;
   box-shadow: 1px 7px 17px rgba(0, 0, 0, 0.25);
 }
 #home-page #skills .content-container .icon-container {
@@ -864,6 +859,10 @@ html[data-theme=dark] {
 #blog-page header .blog-post-title {
   text-align: start;
   color: #c9ae78;
+  padding-bottom: 0.2rem;
+}
+#blog-page header .blog-post-title + time {
+  margin-bottom: 2rem;
 }
 #blog-page header div.blog-purpose-container {
   border-radius: 4px;
@@ -891,6 +890,17 @@ html[data-theme=dark] {
 #blog-page section main {
   width: calc(100% - 8rem);
   float: left;
+}
+#blog-page section main code {
+  background: #3b3b3b;
+  display: block;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+#blog-page section main h2 {
+  color: #e0840b;
+  margin-top: 2rem;
 }
 #blog-page section main article {
   background-color: #2b2b2b;
@@ -961,8 +971,9 @@ html[data-theme=dark] {
   cursor: pointer;
 }
 #blog-page section nav .btn.back-to-main {
-  color: #c9ae78;
+  color: #ff6600;
   border: solid 2px #c9ae78;
+  text-decoration: none;
 }
 #blog-page section nav .btn.back-to-main:hover {
   color: black;
@@ -983,6 +994,9 @@ html[data-theme=dark] {
   background: none;
   color: #c9ae78;
   height: auto;
+  transition: opacity;
+}
+#blog-page section nav .btn.back-to-top.hide {
   display: none;
 }
 #blog-page section nav .btn.back-to-top:focus {

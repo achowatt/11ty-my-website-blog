@@ -6,11 +6,9 @@
 const backToTopBtn = document.querySelector(".back-to-top");
 
 window.addEventListener('scroll', function(e) {
-    if (window.scrollY > 500){
-        backToTopBtn.style.display= "block";
-    } else {
-        backToTopBtn.style.display= "none";
-    }
+    window.scrollY > 500 ? 
+        backToTopBtn.classList.remove("hide"): 
+        backToTopBtn.classList.add("hide")
 });
 
 
