@@ -16,16 +16,65 @@
         .content-container{
             display:grid;
             grid-template-columns: repeat(auto-fill, minmax(25rem,1fr));
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding: 5rem 0;
             grid-row-gap: 2rem;
             justify-items: center;
             align-items: center;
             .project {
                 width:23rem;
                 height:16rem;
-                background: var(--themed-background-color);
+                position:relative;
                 border-radius:5px;
+                .front-card {
+                    height:100%;
+                    width:100%;
+                    overflow: hidden;
+                    position:absolute;
+                    // background: var(--themed-background-color);
+                    border-radius: 3px;
+                    z-index:1;
+                    transition: 3s transform;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+
+                    display:grid;
+                    place-items: center;
+
+                    box-shadow: 3px 3px 3px rgba(141, 141, 141, 0.322);
+
+                    img{
+                        width:100%;
+                        filter: brightness(0.9);
+                    }
+
+                    .project-title {
+                        position:absolute;
+                        color:white;
+                        text-shadow: 2px 2px 4px #000000;
+                    }
+                }
+                .back-card {
+                    height:100%;
+                    width:100%;
+                    position:absolute;
+                    transform: rotateY(180deg);
+                    transition: 3s transform;
+                    background: #EDE6DB;
+                    border-radius: 3px;
+                    -webkit-backface-visibility: hidden; /* Safari */
+                    backface-visibility: hidden;
+
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    box-shadow: 3px 3px 3px rgba(141, 141, 141, 0.322);
+
+                    .project-button-container {
+                        padding: 1rem 0 0;
+                    }
+                }
             }
         }
 
@@ -44,7 +93,6 @@
                 .project {
                     width:90%;
                     height:16rem;
-                    background: var(--themed-background-color);
                     border-radius:5px;
                 }
             }
