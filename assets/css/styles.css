@@ -611,7 +611,7 @@ html[data-theme=dark] {
 }
 #home-page #projects .content-container .project .front-card img {
   width: 100%;
-  filter: grayscale(56%);
+  filter: grayscale(23%);
 }
 #home-page #projects .content-container .project .front-card .project-title {
   position: absolute;
