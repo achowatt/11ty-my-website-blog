@@ -266,7 +266,7 @@ html[data-theme=dark] {
   position: absolute;
   bottom: -2rem;
   right: 0;
-  color: #EB8740;
+  color: var(--download-button);
   cursor: pointer;
   background: none;
   border: none;
