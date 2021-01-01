@@ -5,6 +5,7 @@
         padding:0.7rem;
         border-radius: 5px;
         text-decoration: none;
+        background-color: transparent;
         // background: var(--download-button);
         // color: var(--main-background-color);
         border: solid 2px #7E6969;
@@ -12,19 +13,27 @@
         @include box-shadow;
         transition:all 0.5s;
         cursor:pointer;
-
+        
         &:hover {
             background: var(--text-color);
             transform: translateY(-5px);
             color:white;
         }
 
+        @media (hover:none){
+            background-color: #7E6969;
+            color:white;
+        }
+
+        
+
         &:focus{
             outline: 1px dashed green;
         }
         
         @include screensize ($mobile) {
-            padding:0.7rem 2rem;
+            background-color: #7E6969;
+            color:white;
         }
     }
 }/***** END OF HOME-PAGE *****/

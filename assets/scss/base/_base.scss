@@ -23,12 +23,12 @@ html {
   
     /* Background */
     --themed-background-color: #ECF6D7;
-    --main-background-color: white;
+    --main-background-color: #ffffff;
   
     --text-color: #7E6969;
     --text-color-highlight: #0085FF;
   
-    --heading-color-light: #0034EB;
+    --heading-color-light: #dddddd;
     --heading-color-dark: #00D7D7;
 
     --icon-color: #626161;
@@ -46,7 +46,7 @@ html {
     --form-input: #00B6FF;
 
     @include screensize ($mobile) {
-      font-size:80%;
+      font-size:90%;
     }
   }
   

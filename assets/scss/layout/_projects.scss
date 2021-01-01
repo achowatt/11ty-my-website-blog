@@ -11,7 +11,8 @@
             // border-radius: 0 20px 20px 0;
             // outline: 1px solid var(--text-color);
             // outline-offset: -10px;
-            box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.25);
+            // box-shadow: inset 2px 2px 14px var(--heading-color-light);
+            border-radius: 3px;
         }
         .content-container{
             display:grid;
@@ -25,6 +26,10 @@
                 height:16rem;
                 position:relative;
                 border-radius:5px;
+                &:hover {
+                    cursor: pointer;
+                }
+
                 .front-card {
                     height:100%;
                     width:100%;
