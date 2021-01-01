@@ -611,7 +611,7 @@ html[data-theme=dark] {
 }
 #home-page #projects .content-container .project .front-card img {
   width: 100%;
-  filter: brightness(0.9);
+  filter: grayscale(56%);
 }
 #home-page #projects .content-container .project .front-card .project-title {
   position: absolute;
@@ -624,7 +624,7 @@ html[data-theme=dark] {
   position: absolute;
   transform: rotateY(180deg);
   transition: 3s transform;
-  background: #EDE6DB;
+  background: var(--themed-background-color);
   border-radius: 3px;
   -webkit-backface-visibility: hidden;
   /* Safari */
