@@ -75,7 +75,7 @@
                 grid-area:submit;
                 font-family: 'Raleway', sans-serif;
                 color:white;
-                background-color: #7E6969;
+                background-color: var(--download-button);
                 padding: 0.5rem 0;
 
                 &:hover {

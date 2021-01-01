@@ -5,10 +5,12 @@
         padding:0.7rem;
         border-radius: 5px;
         text-decoration: none;
-        background-color: transparent;
+            background-color: var(--download-button);
+            color:white;
         // background: var(--download-button);
         // color: var(--main-background-color);
-        border: solid 2px #7E6969;
+        // border: solid 2px #7E6969;
+        border: solid 2px var(--download-button);
         text-transform: uppercase;
         @include box-shadow;
         transition:all 0.5s;
@@ -20,11 +22,10 @@
             color:white;
         }
 
-        @media (hover:none){
-            background-color: #7E6969;
-            color:white;
-        }
-
+        // @media (hover:none){
+        //     background-color: var(--download-button);
+        //     color:white;
+        // }
         
 
         &:focus{
@@ -32,7 +33,7 @@
         }
         
         @include screensize ($mobile) {
-            background-color: #7E6969;
+            background-color: var(--download-button);
             color:white;
         }
     }

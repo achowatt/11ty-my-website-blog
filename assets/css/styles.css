@@ -20,7 +20,7 @@ html {
   justify-content: center;
   font-size: 100%;
   /* Background */
-  --themed-background-color: #ECF6D7;
+  --themed-background-color: #ececec;
   --main-background-color: #ffffff;
   --text-color: #7E6969;
   --text-color-highlight: #0085FF;
@@ -133,8 +133,9 @@ html[data-theme=dark] {
   padding: 0.7rem;
   border-radius: 5px;
   text-decoration: none;
-  background-color: transparent;
-  border: solid 2px #7E6969;
+  background-color: var(--download-button);
+  color: white;
+  border: solid 2px var(--download-button);
   text-transform: uppercase;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.171);
   transition: all 0.5s;
@@ -145,18 +146,12 @@ html[data-theme=dark] {
   transform: translateY(-5px);
   color: white;
 }
-@media (hover: none) {
-  #home-page .button {
-    background-color: #7E6969;
-    color: white;
-  }
-}
 #home-page .button:focus {
   outline: 1px dashed green;
 }
 @media only screen and (max-width: 814px) {
   #home-page .button {
-    background-color: #7E6969;
+    background-color: var(--download-button);
     color: white;
   }
 }
@@ -170,7 +165,7 @@ html[data-theme=dark] {
   display: none;
 }
 #home-page nav.sticky {
-  background: #EDE6DB;
+  background: white;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -387,7 +382,7 @@ html[data-theme=dark] {
   grid-area: submit;
   font-family: "Raleway", sans-serif;
   color: white;
-  background-color: #7E6969;
+  background-color: var(--download-button);
   padding: 0.5rem 0;
 }
 #home-page #contact .contact-form .button[type=submit]:hover {
