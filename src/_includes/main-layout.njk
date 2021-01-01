@@ -32,11 +32,13 @@
                 <div class="header-left">
                     <h2>About <span>Me</span></h2>
                 </div>
-                <p>
+                <div class="about-paragraph">
                     {# about me -- change content in index.njk #}
-                    {{ content | safe }}
-                    <a class="read-more">Read more ></a>
-                </p>
+                    <p class="hide-content">
+                        {{ content | safe }}
+                    </p>
+                    <a class="read-more">Read More ></a>
+                </div>
                 </div>
                 <div class="download-container">
                     <a class="button" href="/assets/pdf/WebDevelopmentResume_Anna.pdf" target="_blank" alt="Download Resume">Download Resume</a>

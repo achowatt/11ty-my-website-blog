@@ -19,14 +19,19 @@
                 // border-radius: 0 20px 20px 0;
                 // box-shadow: -5px 8px 19px rgba(0, 0, 0, 0.25);
                 // box-shadow: inset 2px 2px 14px var(--heading-color-light);
-                border-radius: 3px;
+                border-radius: 5px;
             }
 
-            p{  
+            .about-paragraph{  
                 text-align:justify;
                 width:73%;
                 margin:auto;
                 position:relative;
+
+                .hide-content {
+                    overflow: hidden;
+                    height:12rem;
+                }
 
                 .read-more{
                     position:absolute;
@@ -36,9 +41,11 @@
                     cursor: pointer;
                     background:none;
                     border: none;
-                    &:focus {
-                        outline: 1px dashed green;
-                    }
+                    font-family: 'Raleway';
+                    font-size:1rem;
+                    // &:focus {
+                    //     outline: 1px dashed green;
+                    // }
                 }
             }
         }
@@ -52,8 +59,9 @@
                 .header-left{
                     @include heading-mobile;
                 }
-                p{  
+                .about-paragraph{  
                     width:90%;
+
                     .read-more{
                         bottom:-3rem;
                     }

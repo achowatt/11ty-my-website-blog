@@ -1,3 +1,19 @@
+//ABOUT ME SECTION
+const readMore = document.querySelector(".read-more");
+const paragraph = document.querySelector(".about-paragraph > p")
+
+function showMoreContent() {
+    paragraph.classList.toggle("hide-content");
+    if (paragraph.classList.contains("hide-content")) {
+        readMore.textContent = "Read More >"
+    } else {
+        readMore.textContent = "Show Less >"
+    }
+}
+readMore.addEventListener("click", showMoreContent);
+
+
+//PROJECT SECTION
 const projects = document.querySelectorAll(".project");
 
 //keep track of card flips

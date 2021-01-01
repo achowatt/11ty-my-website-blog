@@ -46,11 +46,11 @@
                     height:2.3rem;
                     padding:0.5rem;
                     border-radius:3px;
-                    border: solid var(--themed-background-color) 1.7px;
+                    border: solid #c1c1c1 1.7px;
 
-                    &:focus{
-                        outline: 1px dashed green;
-                    }
+                    // &:focus{
+                    //     outline: 1px dashed green;
+                    // }
                 }
 
                 &-name {

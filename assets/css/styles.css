@@ -20,7 +20,7 @@ html {
   justify-content: center;
   font-size: 100%;
   /* Background */
-  --themed-background-color: #ececec;
+  --themed-background-color: #f2f2f2;
   --main-background-color: #ffffff;
   --text-color: #7E6969;
   --text-color-highlight: #0085FF;
@@ -142,12 +142,7 @@ html[data-theme=dark] {
   cursor: pointer;
 }
 #home-page .button:hover {
-  background: var(--text-color);
   transform: translateY(-5px);
-  color: white;
-}
-#home-page .button:focus {
-  outline: 1px dashed green;
 }
 @media only screen and (max-width: 814px) {
   #home-page .button {
@@ -254,15 +249,19 @@ html[data-theme=dark] {
   align-items: center;
   box-sizing: content-box;
   background-color: var(--themed-background-color);
-  border-radius: 3px;
+  border-radius: 5px;
 }
-#home-page #about .content-container p {
+#home-page #about .content-container .about-paragraph {
   text-align: justify;
   width: 73%;
   margin: auto;
   position: relative;
 }
-#home-page #about .content-container p .read-more {
+#home-page #about .content-container .about-paragraph .hide-content {
+  overflow: hidden;
+  height: 12rem;
+}
+#home-page #about .content-container .about-paragraph .read-more {
   position: absolute;
   bottom: -2rem;
   right: 0;
@@ -270,9 +269,8 @@ html[data-theme=dark] {
   cursor: pointer;
   background: none;
   border: none;
-}
-#home-page #about .content-container p .read-more:focus {
-  outline: 1px dashed green;
+  font-family: "Raleway";
+  font-size: 1rem;
 }
 @media only screen and (max-width: 814px) {
   #home-page #about {
@@ -296,10 +294,10 @@ html[data-theme=dark] {
     justify-content: center;
     align-items: center;
   }
-  #home-page #about .content-container p {
+  #home-page #about .content-container .about-paragraph {
     width: 90%;
   }
-  #home-page #about .content-container p .read-more {
+  #home-page #about .content-container .about-paragraph .read-more {
     bottom: -3rem;
   }
 }
@@ -357,10 +355,7 @@ html[data-theme=dark] {
   height: 2.3rem;
   padding: 0.5rem;
   border-radius: 3px;
-  border: solid var(--themed-background-color) 1.7px;
-}
-#home-page #contact .contact-form .form-group .form-input:focus {
-  outline: 1px dashed green;
+  border: solid #c1c1c1 1.7px;
 }
 #home-page #contact .contact-form .form-group-name {
   grid-area: name;
@@ -575,7 +570,7 @@ html[data-theme=dark] {
   padding: 1rem 2.5rem;
   box-sizing: content-box;
   background-color: var(--themed-background-color);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 #home-page #projects .content-container {
   display: grid;
@@ -688,7 +683,7 @@ html[data-theme=dark] {
   align-items: center;
   box-sizing: content-box;
   background-color: var(--themed-background-color);
-  border-radius: 3px;
+  border-radius: 5px;
 }
 #home-page #skills .content-container .icon-container {
   margin: auto;
@@ -912,9 +907,6 @@ html[data-theme=dark] {
 }
 #blog-page section nav .btn.back-to-top.hide {
   display: none;
-}
-#blog-page section nav .btn.back-to-top:focus {
-  outline: none;
 }
 #blog-page section nav .btn.back-to-top:hover {
   color: white;

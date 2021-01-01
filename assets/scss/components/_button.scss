@@ -17,9 +17,7 @@
         cursor:pointer;
         
         &:hover {
-            background: var(--text-color);
             transform: translateY(-5px);
-            color:white;
         }
 
         // @media (hover:none){
@@ -28,9 +26,9 @@
         // }
         
 
-        &:focus{
-            outline: 1px dashed green;
-        }
+        // &:focus{
+        //     outline: 1px dashed green;
+        // }
         
         @include screensize ($mobile) {
             background-color: var(--download-button);
