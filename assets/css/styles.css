@@ -465,7 +465,7 @@ html[data-theme=dark] {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 3rem;
+  padding: 2rem 0;
   background: var(--background-footer);
 }
 #home-page footer .footer-content {
