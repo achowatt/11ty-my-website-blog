@@ -259,7 +259,7 @@ html[data-theme=dark] {
 }
 #home-page #about .content-container .about-paragraph .hide-content {
   overflow: hidden;
-  height: 12rem;
+  max-height: 12rem;
 }
 #home-page #about .content-container .about-paragraph .read-more {
   position: absolute;
