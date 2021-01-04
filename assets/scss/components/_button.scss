@@ -5,11 +5,8 @@
         padding:0.7rem;
         border-radius: 5px;
         text-decoration: none;
-            background-color: var(--download-button);
-            color:white;
-        // background: var(--download-button);
-        // color: var(--main-background-color);
-        // border: solid 2px #7E6969;
+        background-color: var(--download-button);
+        color:white;
         border: solid 2px var(--download-button);
         text-transform: uppercase;
         @include box-shadow;
@@ -19,16 +16,6 @@
         &:hover {
             transform: translateY(-5px);
         }
-
-        // @media (hover:none){
-        //     background-color: var(--download-button);
-        //     color:white;
-        // }
-        
-
-        // &:focus{
-        //     outline: 1px dashed green;
-        // }
         
         @include screensize ($mobile) {
             background-color: var(--download-button);

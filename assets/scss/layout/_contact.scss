@@ -1,7 +1,6 @@
 /***** HOME PAGE *****/
 #home-page { 
     #contact {
-        // background-image: linear-gradient(to top, var(--themed-background-color), var(--main-background-color));
         background-color: var(--themed-background-color);
         display:flex;
         padding-top: 2rem;
@@ -47,10 +46,6 @@
                     padding:0.5rem;
                     border-radius:3px;
                     border: solid #c1c1c1 1.7px;
-
-                    // &:focus{
-                    //     outline: 1px dashed green;
-                    // }
                 }
 
                 &-name {
@@ -81,23 +76,6 @@
                 &:hover {
                     color:white;
                 }
-                // text-transform: uppercase;
-                // margin-top:1rem;
-                // padding:0.5rem 0.9rem;
-                // border-radius: 5px;
-                // background: var(--themed-background-color);
-                // color: var(--main-background-color);
-                // border: 2px solid #7E6969;
-                // cursor:pointer;
-                // justify-self: end;
-                // @include box-shadow;
-                // transition:all 0.5s;
-
-                // &:hover {
-                //     transform: translateY(-5px);
-                //     background-color: #7E6969;
-                //     color:white;
-                // }
             }
         }
         @include screensize($mobile){

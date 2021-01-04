@@ -11,7 +11,6 @@
       justify-content: center;
       align-items: center;
       background-color: white;
-      // background-image: linear-gradient(to top, #E3F7FF,white);
     }
 
     &.header-bg_v2 {
@@ -25,14 +24,6 @@
       align-items: center;
       background: url("https://res.cloudinary.com/djv69vvs7/image/upload/c_scale,w_1097/v1609222676/interiordesign/bench-accounting-nvzvOPQW0gc-unsplash-1_yeyrs3.jpg") no-repeat bottom ;
       background-size: cover;
-      
-      // &:hover {
-      //   background: url("../images/cropped.jpg") no-repeat;
-      //   background-size: cover;
-      //   .header--name{
-      //     display:none;
-      //   }
-      // }
     }
 
     .header--name { //name
