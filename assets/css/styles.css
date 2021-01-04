@@ -487,6 +487,10 @@ html[data-theme=dark] {
 #home-page footer .footer-content .footer-text {
   color: white;
 }
+#home-page footer .footer-content .footer-link {
+  color: white;
+  cursor: pointer;
+}
 
 /***** END OF HOME-PAGE *****/
 /***** HOME PAGE *****/
