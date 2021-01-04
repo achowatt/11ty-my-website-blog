@@ -10,7 +10,7 @@ function showMoreContent() {
         readMore.textContent = "Show Less >"
     }
 }
-readMore.addEventListener("click", showMoreContent);
+// readMore.addEventListener("click", showMoreContent);
 
 
 //PROJECT SECTION
