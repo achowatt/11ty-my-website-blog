@@ -35,7 +35,7 @@
                 "name email "
                 "subject subject"
                 "message message"
-                ". submit"
+                "submit submit"
             ;
             grid-gap: 0.5rem 2rem;
             .form-group{
@@ -111,7 +111,7 @@
             }
             //right-side
             .contact-form {
-                margin:5rem auto auto auto;
+                // margin:5rem auto auto auto;
                 width:90%;
                 display:grid;
                 grid-template-areas:

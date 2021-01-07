@@ -13,6 +13,10 @@ body {
     flex-direction: column;
     background:rgba(255, 255, 255, 0.822);
     width:100%;
+
+    @include screensize ($mobile) {
+      width: unset;
+    }
 }
 
 html {
