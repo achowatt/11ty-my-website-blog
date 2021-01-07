@@ -2,9 +2,12 @@
 #home-page { 
     #contact {
         background-color: var(--themed-background-color);
-        display:flex;
         padding-top: 2rem;
         padding-bottom:3rem;
+
+        .wrapper { 
+            display:flex;
+        }
         // left-side
         .content-container{
             width:40%;
@@ -32,7 +35,7 @@
                 "name email "
                 "subject subject"
                 "message message"
-                "submit submit"
+                ". submit"
             ;
             grid-gap: 0.5rem 2rem;
             .form-group{
@@ -80,11 +83,13 @@
         }
         @include screensize($mobile){
             background: var(--themed-background-color);
-            display:flex;
-            flex-direction: column;
             height:auto;
             padding-bottom:3rem;
             // left-side
+            .wrapper{
+                display:flex;
+                flex-direction: column;
+            }
             .content-container{
                 width:100%;
                 margin:0;

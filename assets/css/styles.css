@@ -306,9 +306,11 @@ html[data-theme=dark] {
 /***** HOME PAGE *****/
 #home-page #contact {
   background-color: var(--themed-background-color);
-  display: flex;
   padding-top: 2rem;
   padding-bottom: 3rem;
+}
+#home-page #contact .wrapper {
+  display: flex;
 }
 #home-page #contact .content-container {
   width: 40%;
@@ -330,7 +332,7 @@ html[data-theme=dark] {
   margin: 2rem auto auto auto;
   width: 40%;
   display: grid;
-  grid-template-areas: "name email " "subject subject" "message message" "submit submit";
+  grid-template-areas: "name email " "subject subject" "message message" ". submit";
   grid-gap: 0.5rem 2rem;
 }
 #home-page #contact .contact-form .form-group .form-label {
@@ -373,10 +375,12 @@ html[data-theme=dark] {
 @media only screen and (max-width: 814px) {
   #home-page #contact {
     background: var(--themed-background-color);
-    display: flex;
-    flex-direction: column;
     height: auto;
     padding-bottom: 3rem;
+  }
+  #home-page #contact .wrapper {
+    display: flex;
+    flex-direction: column;
   }
   #home-page #contact .content-container {
     width: 100%;
@@ -974,7 +978,7 @@ html[data-theme=dark] {
   overflow: hidden;
 }
 
-#home-page main {
+#home-page .wrapper {
   max-width: 1000px;
   margin: 0 auto;
 }
