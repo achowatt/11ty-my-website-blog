@@ -14,27 +14,33 @@ function showMoreContent() {
 
 
 //PROJECT SECTION
-const projects = document.querySelectorAll(".project");
+let projects = document.querySelector(".projects").children;
+const projectFront = {};
 
-//keep track of card flips
-let facingFront = false;
-
-function flipCard() {
-    const cardFaces = this.children;
-    if (!facingFront) {
-        for (const cardFace of cardFaces) {
-            cardFace.classList.contains("front-card") ? 
-            cardFace.style.transform = "rotateY(180deg)" :
-            cardFace.style.transform = "rotateY(0deg)";
-        }
-    } else {
-        for (const cardFace of cardFaces) {
-            cardFace.classList.contains("front-card") ? 
-            cardFace.style.transform = "rotateY(0deg)" :
-            cardFace.style.transform = "rotateY(180deg)";
-        }
-    }
-    facingFront = !facingFront;
+//initialize unflipped cards
+for (const index in projects) {
+    projectFront[index] = false;
 }
 
-projects.forEach(project => project.addEventListener("click", flipCard));
+// function flipCard() {
+//     const cardFaces = this.children;
+//     console.log(cardFaces);
+//     if (!facingFront) {
+//         for (const cardFace of cardFaces) {
+//             cardFace.classList.contains("front-card") ? 
+//             cardFace.style.transform = "rotateY(180deg)" :
+//             cardFace.style.transform = "rotateY(0deg)";
+//         }
+//     } else {
+//         for (const cardFace of cardFaces) {
+//             cardFace.classList.contains("front-card") ? 
+//             cardFace.style.transform = "rotateY(0deg)" :
+//             cardFace.style.transform = "rotateY(180deg)";
+//         }
+//     }
+//     facingFront = !facingFront;
+// }
+
+for (const project of projects) {
+    project.addEventListener("click", flipCard);
+}
