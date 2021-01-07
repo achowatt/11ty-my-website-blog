@@ -7,28 +7,12 @@
   box-sizing: inherit;
 }
 
-body {
-    box-sizing: border-box;
-    display:flex;
-    flex-direction: column;
-    background:rgba(255, 255, 255, 0.822);
-    width:100%;
-
-    @include screensize ($mobile) {
-      width: unset;
-    }
-}
-
-html {
-    display:flex;
-    justify-content: center;
-    font-size: 100%;
-  
+:root {
     /* Background */
     --themed-background-color: #f2f2f2;
     --main-background-color: #ffffff;
   
-    --text-color: #7E6969;
+    --text-color: #313131;
     --text-color-highlight: #0085FF;
   
     --heading-color-light: #dddddd;
@@ -47,7 +31,24 @@ html {
     --background-footer: #626161;
 
     --form-input: #00B6FF;
+}
 
+body {
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    background:rgba(255, 255, 255, 0.822);
+    width:100%;
+
+    @include screensize ($mobile) {
+      width: unset;
+    }
+}
+
+html {
+    display:flex;
+    justify-content: center;
+    font-size: 100%;
     @include screensize ($mobile) {
       font-size:90%;
     }

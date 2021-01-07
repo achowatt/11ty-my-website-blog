@@ -7,6 +7,24 @@
   box-sizing: inherit;
 }
 
+:root {
+  /* Background */
+  --themed-background-color: #f2f2f2;
+  --main-background-color: #ffffff;
+  --text-color: #313131;
+  --text-color-highlight: #0085FF;
+  --heading-color-light: #dddddd;
+  --heading-color-dark: #00D7D7;
+  --icon-color: #626161;
+  --download-button: #00D7D7;
+  --AC-logo: #00B6FF;
+  --form-field-txt: #A38787;
+  --submit-btn-light: #00B6FF;
+  --submit-btn-dark: #1A4374;
+  --background-footer: #626161;
+  --form-input: #00B6FF;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
@@ -24,21 +42,6 @@ html {
   display: flex;
   justify-content: center;
   font-size: 100%;
-  /* Background */
-  --themed-background-color: #f2f2f2;
-  --main-background-color: #ffffff;
-  --text-color: #7E6969;
-  --text-color-highlight: #0085FF;
-  --heading-color-light: #dddddd;
-  --heading-color-dark: #00D7D7;
-  --icon-color: #626161;
-  --download-button: #00D7D7;
-  --AC-logo: #00B6FF;
-  --form-field-txt: #A38787;
-  --submit-btn-light: #00B6FF;
-  --submit-btn-dark: #1A4374;
-  --background-footer: #626161;
-  --form-input: #00B6FF;
 }
 @media only screen and (max-width: 814px) {
   html {
