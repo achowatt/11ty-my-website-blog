@@ -25,6 +25,10 @@
                     position: absolute;
                     border-radius: 50%;
                     animation: rotate infinite 3s;
+
+                    @include screensize($mobile) {
+                        display:none;
+                    }
                 }
                 @keyframes rotate {
                     from {

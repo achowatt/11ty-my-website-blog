@@ -256,6 +256,11 @@ html[data-theme=dark] {
   border-radius: 50%;
   animation: rotate infinite 3s;
 }
+@media only screen and (max-width: 814px) {
+  #home-page #about .content-container .header-left::after {
+    display: none;
+  }
+}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
