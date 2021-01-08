@@ -9,8 +9,10 @@
 
 :root {
     /* Background */
-    --themed-background-color: white;
+    --themed-background-color: #ffffff;
     --main-background-color: #ffffff;
+
+    --contact-background-color: #3f3c56;
   
     --text-color: #313131;
     --text-color-highlight: #0085FF;
@@ -28,7 +30,7 @@
     --submit-btn-light: #00B6FF;
     --submit-btn-dark: #1A4374;
   
-    --background-footer: #626161;
+    --background-footer: #2f2e41;
 
     --form-input: #00B6FF;
 }
