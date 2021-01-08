@@ -9,7 +9,7 @@
 
 :root {
   /* Background */
-  --themed-background-color: #ffffff;
+  --themed-background-color: #f7f7f7;
   --main-background-color: #ffffff;
   --contact-background-color: #3f3c56;
   --text-color: #313131;
@@ -246,8 +246,23 @@ html[data-theme=dark] {
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
-  background-color: var(--themed-background-color);
-  border-radius: 5px;
+}
+#home-page #about .content-container .header-left::after {
+  content: "";
+  width: 12rem;
+  height: 12rem;
+  border: inset 2px #dcdcdc;
+  position: absolute;
+  border-radius: 50%;
+  animation: rotate infinite 3s;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 #home-page #about .content-container .about-paragraph {
   text-align: justify;
@@ -627,8 +642,7 @@ html[data-theme=dark] {
   text-align: right;
   padding: 1rem 2.5rem;
   box-sizing: content-box;
-  background-color: var(--themed-background-color);
-  border-radius: 5px;
+  position: relative;
 }
 #home-page #projects .content-container {
   display: grid;
@@ -664,7 +678,6 @@ html[data-theme=dark] {
 }
 #home-page #projects .content-container .project .front-card img {
   width: 100%;
-  filter: grayscale(23%);
 }
 #home-page #projects .content-container .project .front-card .project-title {
   position: absolute;
@@ -734,14 +747,12 @@ html[data-theme=dark] {
 }
 #home-page #skills .content-container .header-right {
   text-align: left;
-  width: 13rem;
-  height: 13rem;
+  width: 12rem;
+  height: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: content-box;
-  background-color: var(--themed-background-color);
-  border-radius: 5px;
 }
 #home-page #skills .content-container .icon-container {
   margin: auto;

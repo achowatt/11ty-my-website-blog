@@ -6,8 +6,20 @@
             text-align:right;
             padding:1rem 2.5rem;
             box-sizing:content-box;
-            background-color: var(--themed-background-color);
-            border-radius: 5px;
+            // border: solid 2px var(--themed-background-color);
+            // border-radius: 5px;
+            position:relative;
+
+            // &::after {
+            //     content: "";
+            //     width: 100%;
+            //     height:100%;
+            //     border:solid 2px rgb(247, 247, 247);
+            //     position:absolute;
+            //     transform: rotate(4deg);
+            //     top:0;
+            //     left:0;
+            // }
         }
         .content-container{
             display:grid;
@@ -43,7 +55,6 @@
 
                     img{
                         width:100%;
-                        filter: grayscale(23%);
                     }
 
                     .project-title {
