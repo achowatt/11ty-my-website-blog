@@ -19,7 +19,7 @@
         
         @include screensize ($mobile) {
             background-color: var(--download-button);
-            color:white;
+            color:black;
         }
     }
 }/***** END OF HOME-PAGE *****/

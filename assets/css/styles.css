@@ -155,7 +155,7 @@ html[data-theme=dark] {
 @media only screen and (max-width: 814px) {
   #home-page .button {
     background-color: var(--download-button);
-    color: white;
+    color: black;
   }
 }
 
@@ -372,9 +372,6 @@ html[data-theme=dark] {
   background-color: var(--download-button);
   padding: 0.5rem 0;
 }
-#home-page #contact .contact-form .button[type=submit]:hover {
-  color: white;
-}
 @media only screen and (max-width: 814px) {
   #home-page #contact {
     background: var(--themed-background-color);
@@ -447,6 +444,7 @@ html[data-theme=dark] {
     grid-area: submit;
     margin-top: 1rem;
     padding: 0.8rem;
+    color: black;
   }
 }
 

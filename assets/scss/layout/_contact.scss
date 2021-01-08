@@ -72,13 +72,9 @@
             .button[type="submit"]{
                 grid-area:submit;
                 font-family: 'Raleway', sans-serif;
-                color:white;
+                color: white;
                 background-color: var(--download-button);
                 padding: 0.5rem 0;
-
-                &:hover {
-                    color:white;
-                }
             }
         }
         @include screensize($mobile){
@@ -155,6 +151,7 @@
                     grid-area:submit;
                     margin-top:1rem;
                     padding:0.8rem;
+                    color: black;
                 }
             }
         }
