@@ -9,7 +9,7 @@
 
 :root {
   /* Background */
-  --themed-background-color: #f2f2f2;
+  --themed-background-color: white;
   --main-background-color: #ffffff;
   --text-color: #313131;
   --text-color-highlight: #0085FF;
@@ -35,6 +35,7 @@ body {
 @media only screen and (max-width: 814px) {
   body {
     width: unset;
+    overflow-x: hidden;
   }
 }
 
@@ -42,6 +43,7 @@ html {
   display: flex;
   justify-content: center;
   font-size: 100%;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 814px) {
   html {
@@ -168,7 +170,7 @@ html[data-theme=dark] {
   display: none;
 }
 #home-page nav.sticky {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -179,7 +181,6 @@ html[data-theme=dark] {
   height: 4.5rem;
   top: 0;
   z-index: 100;
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
 }
 #home-page nav.sticky .logo:link, #home-page nav.sticky .logo:visited {
   color: var(--AC-logo);
@@ -276,7 +277,7 @@ html[data-theme=dark] {
   #home-page #about .content-container .header-left {
     width: 90%;
     background: none;
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 1.5rem auto;
     padding: 0;
     box-sizing: border-box;
     height: 4rem;
@@ -308,80 +309,35 @@ html[data-theme=dark] {
 /*****END OF HOME PAGE *****/
 /***** HOME PAGE *****/
 #home-page #contact {
-  background-color: var(--themed-background-color);
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-#home-page #contact .wrapper {
-  display: flex;
-}
-#home-page #contact .content-container {
-  width: 40%;
-  margin: 2rem auto auto auto;
-  text-align: start;
-}
-#home-page #contact .content-container .tree {
-  position: absolute;
-  left: 0;
-  transform: translateY(15%);
-}
-#home-page #contact .content-container svg {
-  width: 100%;
-  height: 100%;
   position: relative;
-  top: 3rem;
-}
-#home-page #contact .contact-form {
-  margin: 2rem auto auto auto;
-  width: 40%;
-  display: grid;
-  grid-template-areas: "name email " "subject subject" "message message" "submit submit";
-  grid-gap: 0.5rem 2rem;
-}
-#home-page #contact .contact-form .form-group .form-label {
-  display: block;
-  padding: 0.5rem;
-}
-#home-page #contact .contact-form .form-group .form-input {
-  width: 100%;
-  height: 2.3rem;
-  padding: 0.5rem;
-  border-radius: 3px;
-  border: solid #c1c1c1 1.7px;
-}
-#home-page #contact .contact-form .form-group-name {
-  grid-area: name;
-}
-#home-page #contact .contact-form .form-group-email {
-  grid-area: email;
-}
-#home-page #contact .contact-form .form-group-subject {
-  grid-area: subject;
-}
-#home-page #contact .contact-form .form-group-message {
-  grid-area: message;
-}
-#home-page #contact .contact-form .form-group-message .form-input {
-  height: 10rem;
-  resize: none;
-}
-#home-page #contact .contact-form .button[type=submit] {
-  grid-area: submit;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  background-color: var(--download-button);
-  padding: 0.5rem 0;
 }
 @media only screen and (max-width: 814px) {
   #home-page #contact {
     background: var(--themed-background-color);
     height: auto;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
   }
-  #home-page #contact .wrapper {
-    display: flex;
-    flex-direction: column;
+  #home-page #contact .contact-image {
+    position: absolute;
+    bottom: -6rem;
+    max-width: 1300px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    width: 100vw;
   }
+}
+@media only screen and (max-width: 814px) and (max-width: 565px) {
+  #home-page #contact .contact-image {
+    width: 140vw;
+  }
+}
+@media only screen and (max-width: 814px) and (max-width: 390px) {
+  #home-page #contact .contact-image {
+    width: 222vw;
+  }
+}
+@media only screen and (max-width: 814px) {
   #home-page #contact .content-container {
     width: 100%;
     margin: 0;
@@ -390,7 +346,7 @@ html[data-theme=dark] {
   #home-page #contact .content-container .header {
     width: 90%;
     background: none;
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 1.5rem auto;
     padding: 0;
     box-sizing: border-box;
     height: 4rem;
@@ -398,6 +354,7 @@ html[data-theme=dark] {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: unset;
     margin-bottom: 1rem;
     border-color: var(--main-background-color);
   }
@@ -408,7 +365,10 @@ html[data-theme=dark] {
   #home-page #contact .content-container .tree {
     width: 70vw;
   }
+}
+@media only screen and (max-width: 814px) {
   #home-page #contact .contact-form {
+    margin: 2rem auto auto auto;
     width: 90%;
     display: grid;
     grid-template-areas: "name name" "email email" "subject subject" "message message" "submit submit";
@@ -423,6 +383,7 @@ html[data-theme=dark] {
     height: 2.3rem;
     padding: 0.5rem;
     border-radius: 3px;
+    border: solid #c1c1c1 1.7px;
   }
   #home-page #contact .contact-form .form-group-name {
     grid-area: name;
@@ -442,9 +403,79 @@ html[data-theme=dark] {
   }
   #home-page #contact .contact-form .button[type=submit] {
     grid-area: submit;
+    font-family: "Raleway", sans-serif;
     margin-top: 1rem;
     padding: 0.8rem;
     color: black;
+  }
+}
+@media screen and (min-width: 815px) {
+  #home-page #contact {
+    background-color: var(--themed-background-color);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+  #home-page #contact .contact-info {
+    padding-left: 2rem;
+  }
+  #home-page #contact .contact-image {
+    position: absolute;
+    bottom: -6rem;
+    width: 100vw;
+    max-width: 1250px;
+    left: 50%;
+    transform: translateX(-43%);
+    pointer-events: none;
+  }
+  #home-page #contact .content-container {
+    width: 58%;
+    min-width: 34rem;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+  #home-page #contact .content-container .header {
+    margin-bottom: 2rem;
+  }
+  #home-page #contact .contact-form {
+    width: 58%;
+    min-width: 34rem;
+    display: grid;
+    grid-template-areas: "name email " "subject subject" "message message" "submit submit";
+    grid-gap: 0.5rem 2rem;
+  }
+  #home-page #contact .contact-form .form-group .form-label {
+    display: block;
+    padding: 0.5rem;
+  }
+  #home-page #contact .contact-form .form-group .form-input {
+    width: 100%;
+    height: 2.3rem;
+    padding: 0.5rem;
+    border-radius: 3px;
+    border: solid #c1c1c1 1.7px;
+  }
+  #home-page #contact .contact-form .form-group-name {
+    grid-area: name;
+  }
+  #home-page #contact .contact-form .form-group-email {
+    grid-area: email;
+  }
+  #home-page #contact .contact-form .form-group-subject {
+    grid-area: subject;
+  }
+  #home-page #contact .contact-form .form-group-message {
+    grid-area: message;
+  }
+  #home-page #contact .contact-form .form-group-message .form-input {
+    height: 10rem;
+    resize: none;
+  }
+  #home-page #contact .contact-form .button[type=submit] {
+    grid-area: submit;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    background-color: var(--download-button);
+    padding: 0.5rem 0;
   }
 }
 
@@ -477,6 +508,7 @@ html[data-theme=dark] {
 }
 #home-page footer .footer-content .footer-text {
   color: white;
+  text-align: center;
 }
 #home-page footer .footer-content .footer-link {
   color: white;
@@ -498,13 +530,7 @@ html[data-theme=dark] {
 #home-page header.header-bg_v2 {
   height: calc(100vh - 4.5rem);
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: top;
-  justify-content: center;
-  align-items: center;
-  background: url("https://res.cloudinary.com/djv69vvs7/image/upload/c_scale,w_1097/v1609222676/interiordesign/bench-accounting-nvzvOPQW0gc-unsplash-1_yeyrs3.jpg") no-repeat bottom;
-  background-size: cover;
+  position: relative;
 }
 #home-page header .header--name {
   font-family: "Monoton", cursive;
@@ -522,7 +548,16 @@ html[data-theme=dark] {
   font-family: "Nixie One", cursive;
   text-align: center;
   font-size: 2rem;
-  margin-top: -26vh;
+}
+#home-page header .header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 #home-page header .header--description {
   font-size: 1.2rem;
@@ -538,6 +573,23 @@ html[data-theme=dark] {
   font-family: "Unica One", cursive;
   line-height: 1.5;
   font-size: 1.4rem;
+  padding-bottom: 3rem;
+}
+@media screen and (max-width: 1100px) {
+  #home-page header .header--description_v2 {
+    padding-bottom: 8rem;
+  }
+}
+#home-page header .header-img {
+  width: 50vw;
+  bottom: 74px;
+  max-width: 1000px;
+  min-width: 300px;
+}
+@media screen and (max-width: 1100px) {
+  #home-page header .header-img {
+    width: 94vw;
+  }
 }
 @media only screen and (max-width: 814px) {
   #home-page header {
@@ -639,7 +691,7 @@ html[data-theme=dark] {
   #home-page #projects .header-left {
     width: 90%;
     background: none;
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 1.5rem auto;
     padding: 0;
     box-sizing: border-box;
     height: 4rem;
@@ -650,7 +702,7 @@ html[data-theme=dark] {
   }
   #home-page #projects .content-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     padding-top: 0;
     grid-row-gap: 2rem;
     justify-items: center;
@@ -712,7 +764,7 @@ html[data-theme=dark] {
   #home-page #skills .content-container .header-right {
     width: 90%;
     background: none;
-    margin: 3rem auto 3rem auto;
+    margin: 3rem auto 1.5rem auto;
     padding: 0;
     box-sizing: border-box;
     height: 4rem;
@@ -725,7 +777,7 @@ html[data-theme=dark] {
   #home-page #skills .content-container .icon-container {
     display: grid;
     justify-items: center;
-    grid-template-columns: repeat(4, minmax(2rem, 1fr));
+    grid-template-columns: repeat(4, minmax(1rem, 1fr));
     width: 85%;
   }
   #home-page #skills .content-container .icon-container .icon {

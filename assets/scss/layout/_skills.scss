@@ -53,7 +53,7 @@
                 .icon-container{
                     display:grid;
                     justify-items: center;
-                    grid-template-columns: repeat(4, minmax(2rem,1fr));
+                    grid-template-columns: repeat(4, minmax(1rem,1fr));
                     width:85%;
                     .icon {
                         text-align: center;

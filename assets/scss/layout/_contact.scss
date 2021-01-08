@@ -1,91 +1,32 @@
 /***** HOME PAGE *****/
 #home-page { 
     #contact {
-        background-color: var(--themed-background-color);
-        padding-top: 2rem;
-        padding-bottom:3rem;
+        position:relative;
 
-        .wrapper { 
-            display:flex;
-        }
-        // left-side
-        .content-container{
-            width:40%;
-            margin: 2rem auto auto auto;
-            text-align:start;
-
-            .tree {
-                position: absolute;
-                left:0;
-                transform:translateY(15%);
-            }
-            svg{
-                width: 100%;
-                height: 100%;
-                position: relative;
-                top:3rem;
-            }
-        }
-        //right-side
-        .contact-form {
-            margin:2rem auto auto auto;
-            width:40%;
-            display:grid;
-            grid-template-areas:
-                "name email "
-                "subject subject"
-                "message message"
-                "submit submit"
-            ;
-            grid-gap: 0.5rem 2rem;
-            .form-group{
-                .form-label{
-                    display:block;
-                    padding:0.5rem;
-                }
-                .form-input {
-                    width:100%;
-                    height:2.3rem;
-                    padding:0.5rem;
-                    border-radius:3px;
-                    border: solid #c1c1c1 1.7px;
-                }
-
-                &-name {
-                    grid-area: name;
-                }
-                &-email {
-                    grid-area: email;
-                }
-                &-subject {
-                    grid-area: subject;
-                }
-                &-message {
-                    grid-area: message;
-                    .form-input{
-                        height:10rem;
-                        resize:none;
-                    }
-                }          
-            }
-            // .button-submit{
-            .button[type="submit"]{
-                grid-area:submit;
-                font-family: 'Raleway', sans-serif;
-                color: white;
-                background-color: var(--download-button);
-                padding: 0.5rem 0;
-            }
-        }
         @include screensize($mobile){
             background: var(--themed-background-color);
             height:auto;
-            padding-bottom:3rem;
-            // left-side
-            .wrapper{
-                display:flex;
-                flex-direction: column;
+            padding-bottom:8rem;
+            //svg image
+            .contact-image{
+                position: absolute;
+                bottom:-6rem;
+                max-width:1300px;
+                left:50%;
+                transform:translateX(-50%);
+                pointer-events: none;
+                width: 100vw;
+                @media screen and (max-width:565px) {
+                    width: 140vw;
+                }
+                @media screen and (max-width:390px) {
+                    width: 222vw;
+                }
             }
+            //contact-info (wrapper)
+            .contact-info{
+            }
+            // left-side
             .content-container{
                 width:100%;
                 margin:0;
@@ -93,6 +34,7 @@
                 .header {
                     //see mixins
                     @include heading-mobile;
+                    height:unset;
                     margin-bottom:1rem;
                     border-color: var(--main-background-color);
                 }
@@ -107,7 +49,7 @@
             }
             //right-side
             .contact-form {
-                // margin:5rem auto auto auto;
+                margin:2rem auto auto auto;
                 width:90%;
                 display:grid;
                 grid-template-areas:
@@ -128,6 +70,7 @@
                         height:2.3rem;
                         padding:0.5rem;
                         border-radius:3px;
+                        border: solid #c1c1c1 1.7px;
                     }
         
                     &-name {
@@ -149,9 +92,91 @@
                 }
                 .button[type="submit"] {
                     grid-area:submit;
+                    font-family: 'Raleway', sans-serif;
                     margin-top:1rem;
                     padding:0.8rem;
                     color: black;
+                }
+            }
+        }
+    //DESKTOP START HERE #contact
+        @media screen and (min-width:815px){
+        background-color: var(--themed-background-color);
+        padding-top: 2rem;
+        padding-bottom:3rem;
+            .contact-info{
+                padding-left:2rem;
+            }
+            .contact-image{
+                position: absolute;
+                bottom:-6rem;
+                width:100vw;
+                max-width:1250px;
+                left:50%;
+                transform:translateX(-43%);
+                pointer-events: none;
+            }
+            // left-side
+            .content-container{
+                width:58%;
+                min-width: 34rem;
+                // margin: 2rem auto auto auto;
+                text-align:start;
+                margin-bottom: 1rem;
+                .header{
+                    margin-bottom: 2rem;
+                }
+            }
+            //right-side
+            .contact-form {
+                // margin:2rem auto auto auto;
+                width:58%;
+                min-width: 34rem;
+                display:grid;
+                grid-template-areas:
+                    "name email "
+                    "subject subject"
+                    "message message"
+                    "submit submit"
+                ;
+                grid-gap: 0.5rem 2rem;
+                .form-group{
+                    .form-label{
+                        display:block;
+                        padding:0.5rem;
+                    }
+                    .form-input {
+                        width:100%;
+                        height:2.3rem;
+                        padding:0.5rem;
+                        border-radius:3px;
+                        border: solid #c1c1c1 1.7px;
+                    }
+
+                    &-name {
+                        grid-area: name;
+                    }
+                    &-email {
+                        grid-area: email;
+                    }
+                    &-subject {
+                        grid-area: subject;
+                    }
+                    &-message {
+                        grid-area: message;
+                        .form-input{
+                            height:10rem;
+                            resize:none;
+                        }
+                    }          
+                }
+                // .button-submit{
+                .button[type="submit"]{
+                    grid-area:submit;
+                    font-family: 'Raleway', sans-serif;
+                    color: white;
+                    background-color: var(--download-button);
+                    padding: 0.5rem 0;
                 }
             }
         }
