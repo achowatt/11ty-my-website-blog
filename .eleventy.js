@@ -16,6 +16,7 @@ module.exports = function (eleventyConfig) {
 
   // Copies static files to output.
   eleventyConfig.addPassthroughCopy('assets');
+  eleventyConfig.addPassthroughCopy('src');
   eleventyConfig.setTemplateFormats([
     "jpg",
     "png",

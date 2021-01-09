@@ -1,8 +1,3 @@
-// document.querySelector(".contact-info-btn").addEventListener("click", function(){
-//     this.classList.add("clicked")
-//     document.querySelector("body").style.overflow = "hidden"
-// });
-
 const backToTopBtn = document.querySelector(".back-to-top");
 
 window.addEventListener('scroll', function(e) {
