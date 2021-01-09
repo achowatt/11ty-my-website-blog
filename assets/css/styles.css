@@ -247,28 +247,6 @@ html[data-theme=dark] {
   align-items: center;
   box-sizing: content-box;
 }
-#home-page #about .content-container .header-left::after {
-  content: "";
-  width: 12rem;
-  height: 12rem;
-  border: inset 2px #dcdcdc;
-  position: absolute;
-  border-radius: 50%;
-  animation: rotate infinite 3s;
-}
-@media only screen and (max-width: 814px) {
-  #home-page #about .content-container .header-left::after {
-    display: none;
-  }
-}
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 #home-page #about .content-container .about-paragraph {
   text-align: justify;
   width: 73%;

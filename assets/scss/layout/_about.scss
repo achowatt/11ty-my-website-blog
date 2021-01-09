@@ -17,27 +17,27 @@
                 // border: solid 2px var(--themed-background-color);
                 // border-radius: 5px;
 
-                &::after {
-                    content: "";
-                    width: 12rem;
-                    height:12rem;
-                    border: inset 2px #dcdcdc;
-                    position: absolute;
-                    border-radius: 50%;
-                    animation: rotate infinite 3s;
+                // &::after {
+                //     content: "";
+                //     width: 12rem;
+                //     height:12rem;
+                //     border: inset 2px #dcdcdc;
+                //     position: absolute;
+                //     border-radius: 50%;
+                //     animation: rotate infinite 3s;
 
-                    @include screensize($mobile) {
-                        display:none;
-                    }
-                }
-                @keyframes rotate {
-                    from {
-                        transform: rotate(0deg);
-                    }
-                    to {
-                        transform: rotate(360deg);
-                    }
-                }
+                //     @include screensize($mobile) {
+                //         display:none;
+                //     }
+                // }
+                // @keyframes rotate {
+                //     from {
+                //         transform: rotate(0deg);
+                //     }
+                //     to {
+                //         transform: rotate(360deg);
+                //     }
+                // }
                 
             }
 
