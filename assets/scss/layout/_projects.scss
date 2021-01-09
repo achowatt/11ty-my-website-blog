@@ -24,7 +24,7 @@
         .content-container{
             display:grid;
             grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
-            padding: 5rem 0;
+            padding: 3rem 0 5rem;
             grid-row-gap: 2rem;
             justify-items: center;
             align-items: center;

@@ -102,7 +102,7 @@
         }
     //DESKTOP START HERE #contact
         @media screen and (min-width:815px){
-        background-color: var(--contact-background-color);
+        // background-color: var(--contact-background-color);
         padding-top: 2rem;
         padding-bottom:3rem;
             .contact-info{
@@ -128,11 +128,11 @@
                     margin-bottom: 2rem;
                 }
                 p {
-                    color:white;
+                    color:black;
                 }
 
                 a {
-                    color:white;
+                    color:black;
                 }
             }
             //right-side

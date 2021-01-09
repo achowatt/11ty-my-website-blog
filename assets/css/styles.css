@@ -412,7 +412,6 @@ html[data-theme=dark] {
 }
 @media screen and (min-width: 815px) {
   #home-page #contact {
-    background-color: var(--contact-background-color);
     padding-top: 2rem;
     padding-bottom: 3rem;
   }
@@ -438,10 +437,10 @@ html[data-theme=dark] {
     margin-bottom: 2rem;
   }
   #home-page #contact .content-container p {
-    color: white;
+    color: black;
   }
   #home-page #contact .content-container a {
-    color: white;
+    color: black;
   }
   #home-page #contact .contact-form {
     width: 58%;
@@ -630,7 +629,7 @@ html[data-theme=dark] {
 #home-page #projects .content-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  padding: 5rem 0;
+  padding: 3rem 0 5rem;
   grid-row-gap: 2rem;
   justify-items: center;
   align-items: center;
