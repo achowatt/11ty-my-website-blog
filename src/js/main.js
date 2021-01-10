@@ -33,3 +33,33 @@ for(let i = 0; i < projects.length; i++){
     });
 }
 
+//FIX STICK NAV TO WORK ON MOBILE
+const nav = document.querySelector("nav");
+const originalNavPosition = nav.offsetTop;
+
+function stickyNav() {
+    if (window.scrollY >= originalNavPosition){
+        nav.classList.add("sticky");
+    } else {
+        nav.classList.remove("sticky");
+    }
+}
+
+// //CHECK POSITION OF SCREEN TO HIGHLIGHT NAV BAR
+// const aboutPos = document.querySelector("#about");
+// const projectPos = document.querySelector("#project");
+// const contactPos = document.querySelector("#contact");
+// let lastScrollPos = 0;
+// function pagePosition() {
+//     lastScrollPos = 
+//     if (window.scrollY > aboutPos.offsetTop) {
+//         document.querySelector("a[href='#about']").classList.add("highlight");
+//     } else {
+//         document.querySelector("a[href='#about']").classList.remove("highlight");
+//     }
+// }
+
+document.addEventListener("scroll", function(e){
+    stickyNav();
+    // pagePosition();
+})

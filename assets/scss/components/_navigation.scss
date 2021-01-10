@@ -7,10 +7,8 @@
         display:none;
     }
 
-    nav.sticky {
+    nav{
         background: rgb(255 255 255 / 90%);
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
         display:flex;
         justify-content:center;
         align-items: center;
@@ -19,6 +17,14 @@
         top:0;
         z-index:100;
         // box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+        // &.sticky{
+        //     position: -webkit-sticky; /* Safari */
+        //     position: sticky;
+        // }
+        &.sticky{
+            position:fixed;
+            top:0;
+        }
         .logo{
             &:link, &:visited {
                 color: var(--AC-logo);
@@ -59,11 +65,11 @@
 
             .nav-item:hover {
                 font-weight: 900;
-                color: #a38787;
-                transform:scale(1.3);
+                color: var(--download-button);
+                // transform:scale(1.3);
             }
-            .nav-item:active {
-                transform: translateY(10px);
+            .highlight {
+                color: var(--download-button);
             }
         }
     }
