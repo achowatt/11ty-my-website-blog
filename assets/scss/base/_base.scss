@@ -11,27 +11,11 @@
     /* Background */
     --themed-background-color: #f7f7f7;
     --main-background-color: #ffffff;
-
     --contact-background-color: #3f3c56;
-  
     --text-color: #313131;
-    --text-color-highlight: #0085FF;
-  
-    --heading-color-light: #dddddd;
-    --heading-color-dark: #00D7D7;
-
     --icon-color: #626161;
     --download-button: #00D7D7;
-
-    --AC-logo: #00B6FF;
-
-    --form-field-txt: #A38787;
-  
-    --submit-btn-light: #00B6FF;
-    --submit-btn-dark: #1A4374;
-  
     --background-footer: #2f2e41;
-
     --form-input: #00B6FF;
 }
 
@@ -57,29 +41,3 @@ html {
       font-size:95%;
     }
   }
-  
-  html[data-theme='dark'] {
-    --themed-background-color:#3C1100;
-    --main-background-color: #000000;
-  
-    --text-color: #FFCA7B;
-    --text-color-highlight: #FF7A00;
-  
-    --heading-color-light: #FFD027;
-    --heading-color-dark: #FF2828;
-  
-    --icon-color:#D59C67;
-    --AC-logo:#FF4900;
-    --form-field-txt: #AFC7C7;
-  
-    --submit-btn-light: #FFCA7B;
-    --submit-btn-dark: #FF4900;
-  
-    --background-footer: #3C1100;
-  
-    /*extra*/
-    --download-button: #FF2E00;
-
-    --form-input: #FFCA7B;
-  }
-  

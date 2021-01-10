@@ -6,12 +6,8 @@
     /* Default font-family */
     font-family: 'Raleway', sans-serif;
 
-    /* Font-variable */
-    --AC-logo-font: 'Parisienne', cursive;
-    --header-font: 'Nixie One', cursive;
-
     h2 {
-        font-family: var(--header-font);
+        font-family: 'Nixie One', cursive;
         -webkit-background-clip: text;
         background-clip: text;
         font-size:2.5rem;
@@ -26,6 +22,7 @@
         @include screensize (1000px){
             font-size: 2.5rem;
         }
+        
         @include screensize ($mobile) {
             font-size: 3rem;
         }

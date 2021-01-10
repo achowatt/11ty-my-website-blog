@@ -6,8 +6,8 @@
         border-radius: 5px;
         text-decoration: none;
         background-color: var(--download-button);
+        border: var(--download-button);
         color:white;
-        border: solid 2px var(--download-button);
         text-transform: uppercase;
         @include box-shadow;
         transition:all 0.5s;

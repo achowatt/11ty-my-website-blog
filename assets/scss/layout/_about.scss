@@ -14,31 +14,6 @@
                 justify-content: center;
                 align-items: center;
                 box-sizing:content-box;
-                // border: solid 2px var(--themed-background-color);
-                // border-radius: 5px;
-
-                // &::after {
-                //     content: "";
-                //     width: 12rem;
-                //     height:12rem;
-                //     border: inset 2px #dcdcdc;
-                //     position: absolute;
-                //     border-radius: 50%;
-                //     animation: rotate infinite 3s;
-
-                //     @include screensize($mobile) {
-                //         display:none;
-                //     }
-                // }
-                // @keyframes rotate {
-                //     from {
-                //         transform: rotate(0deg);
-                //     }
-                //     to {
-                //         transform: rotate(360deg);
-                //     }
-                // }
-                
             }
 
             .about-paragraph{  
@@ -46,26 +21,6 @@
                 width:73%;
                 margin:auto;
                 position:relative;
-
-                // .hide-content {
-                //     overflow: hidden;
-                //     // max-height:12rem;
-                // }
-
-                .read-more{
-                    position:absolute;
-                    bottom:-2rem;
-                    right:0;
-                    color: var(--download-button);
-                    cursor: pointer;
-                    background:none;
-                    border: none;
-                    font-family: 'Raleway';
-                    font-size:1rem;
-                    // &:focus {
-                    //     outline: 1px dashed green;
-                    // }
-                }
             }
         }
         @include screensize ($mobile) {

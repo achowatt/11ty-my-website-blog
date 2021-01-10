@@ -1,17 +1,3 @@
-//ABOUT ME SECTION (if I want to bring back the read-more functionality)
-    // const readMore = document.querySelector(".read-more");
-    // const paragraph = document.querySelector(".about-paragraph > p")
-
-    // function showMoreContent() {
-    //     paragraph.classList.toggle("hide-content");
-    //     if (paragraph.classList.contains("hide-content")) {
-    //         readMore.textContent = "Read More >"
-    //     } else {
-    //         readMore.textContent = "Show Less >"
-    //     }
-    // }
-    // readMore.addEventListener("click", showMoreContent);
-
 //PROJECT SECTION
 let projects = document.querySelector(".projects").children;
 const cardFacingFront = [];
@@ -36,12 +22,17 @@ for(let i = 0; i < projects.length; i++){
 //FIX STICK NAV TO WORK ON MOBILE
 const nav = document.querySelector("nav");
 const originalNavPosition = nav.offsetTop;
+const placeHolder = document.querySelector(".place-holder");
 
 function stickyNav() {
     if (window.scrollY >= originalNavPosition){
         nav.classList.add("sticky");
-    } else {
+        nav.classList.add("addShadow");
+        placeHolder.style.display = "block";
+    } else if (window.scrollY < originalNavPosition){
         nav.classList.remove("sticky");
+        nav.classList.remove("addShadow");
+        placeHolder.style.display = "none";
     }
 }
 

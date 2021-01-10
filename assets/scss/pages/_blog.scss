@@ -3,20 +3,15 @@
     body{
         max-width: 1000px;
         padding: 0 1.5rem;
-        // font-family: 'Montserrat', sans-serif;
         font-family: 'Love Ya Like A Sister', cursive;
         color:white;
         font-weight: bold;
         background-color: rgb(29, 26, 26);
-        // background-image: url("../images/cutethings.png");
     }
     header {
-        // background-color: rgba(255, 255, 255, 0.637);
         h1 {
-            // font-family: "Nixie One", cursive;
             font-family: 'Fredericka the Great';
             padding: 5rem 0 3rem;
-            // color:#3F5B38;
             color:white;
             text-align: center;
             font-size: 4rem;
@@ -73,13 +68,10 @@
             }
 
             article {
-                // background-color: #EAF3E6;
                 background-color: #2b2b2b;
                 border-radius: 4px;
                 margin: 0 1.5rem 1.5rem 0;
                 padding:1rem;
-                // border: 3px solid #C6D9BD;
-                // width: calc(100% - 10rem);
                 a:link, a:visited, a:active{
                     font-size: 1.3rem;
                     text-decoration: none;
@@ -89,14 +81,11 @@
                     cursor: pointer;
                 }
                 header {
-                    // font-family: "Unica One", cursive;
                     border-radius: 4px;
                     display: inline-block;
                     border: 1px solid #dedede;
-                    // background-color:white;
                     padding: 0.6rem;
                     text-align: right;
-                    // color:rgb(70, 70, 70);
                     color:white;
 
                     hr {
@@ -116,8 +105,6 @@
                     }
                 }
                 p {
-                    // font-family: "Nixie One", cursive;
-                    // font-family: "Montserrat", sans-serif;
                     height:5rem;
                     margin-top:1rem;
                     min-height: 5rem;
@@ -125,7 +112,6 @@
                 }
 
                 &:nth-of-type(even) {
-                    // background-color: #FFFFFF;
                     background-color: #000000;
                 }
             }
@@ -167,22 +153,8 @@
                         background-color: #c9ae78;
                     }
                 }
-                // &.contact-info{
-                //     background-color: #FFDC98;
-                //     color:black;
-                //     &.clicked {
-                //         position: fixed;
-                //         max-width: 50rem;
-                //         max-height: 42rem;
-                //         width:100%;
-                //         height:100%;
-                //         top: 50%;
-                //         left: 50%;
-                //         transform: translate(-50%, -50%);
-                //     }
-                // }
+
                 &.see-other-blogs {
-                    // border: 1px dashed #3F5B38;
                     height:auto;
                     color:rgb(255, 102, 0);
                     text-decoration: none;
@@ -192,8 +164,6 @@
                     }
                 }
                 &.back-to-top{
-                    // border: 1px dashed #3F5B38;
-                    // background-color: white;
                     position: relative;
                     left: 0.1rem;
                     background: none;
@@ -203,15 +173,11 @@
                     &.hide {
                         display:none;
                     }
-                    // &:focus{
-                    //     outline: none;
-                    // }
                     &:hover {
                         color:white;
                     }
                 }
             }
-            
         }
     }
 
@@ -227,8 +193,6 @@
         align-items: center;
         justify-content: center;
         height:2rem;
-        // border-top-left-radius: 4px;
-        // border-top-right-radius: 4px;
         .design{
             font-family: "Montserrat", sans-serif;
             font-size: 0.6rem;
