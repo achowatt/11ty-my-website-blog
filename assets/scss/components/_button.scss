@@ -10,7 +10,7 @@
         color:white;
         text-transform: uppercase;
         @include box-shadow;
-        transition:all 0.5s;
+        transition:all 0.3s;
         cursor:pointer;
         
         &:hover {
