@@ -36,21 +36,29 @@ function stickyNav() {
     }
 }
 
-// //CHECK POSITION OF SCREEN TO HIGHLIGHT NAV BAR
-// const aboutPos = document.querySelector("#about");
-// const projectPos = document.querySelector("#project");
-// const contactPos = document.querySelector("#contact");
-// let lastScrollPos = 0;
-// function pagePosition() {
-//     lastScrollPos = 
-//     if (window.scrollY > aboutPos.offsetTop) {
-//         document.querySelector("a[href='#about']").classList.add("highlight");
-//     } else {
-//         document.querySelector("a[href='#about']").classList.remove("highlight");
-//     }
-// }
+//CHECK POSITION OF SCREEN TO HIGHLIGHT NAV BAR
+const aboutPos = document.querySelector("#about");
+const projectPos = document.querySelector("#projects");
+const contactPos = document.querySelector("#contact");
+//Select all nav elements
+const navElements = document.querySelectorAll("nav ul li a");
+
+function pagePosition() {
+    if (window.scrollY > (aboutPos.offsetTop - (window.innerHeight / 3)) && window.scrollY < (projectPos.offsetTop - (window.innerHeight/2))) { 
+        navElements.forEach((element)=> element.classList.remove("highlight"));
+        document.querySelector("a[href='#about']").classList.add("highlight");
+    } else if (window.scrollY > (projectPos.offsetTop - (window.innerHeight / 3)) && window.scrollY < (contactPos.offsetTop - (window.innerHeight / 2))) {
+        navElements.forEach((element)=> element.classList.remove("highlight"));
+        document.querySelector("a[href='#projects']").classList.add("highlight");
+    } else if (window.scrollY > (contactPos.offsetTop - (window.innerHeight / 3))) {
+        navElements.forEach((element)=> element.classList.remove("highlight"));
+        document.querySelector("a[href='#contact']").classList.add("highlight");
+    } else {
+        navElements.forEach((element)=> element.classList.remove("highlight"));
+    }
+}
 
 document.addEventListener("scroll", function(e){
     stickyNav();
-    // pagePosition();
+    pagePosition();
 })
