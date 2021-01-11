@@ -38,6 +38,7 @@ html {
   justify-content: center;
   font-size: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 @media only screen and (max-width: 814px) {
   html {
@@ -180,9 +181,11 @@ html {
   text-transform: uppercase;
   transition: all 0.4s;
 }
-#home-page nav .nav-items-container .nav-item:hover {
-  font-weight: 900;
-  color: var(--download-button);
+@media screen and (min-width: 815) {
+  #home-page nav .nav-items-container .nav-item:hover {
+    font-weight: 900;
+    color: var(--download-button);
+  }
 }
 #home-page nav .nav-items-container .highlight {
   color: var(--download-button);

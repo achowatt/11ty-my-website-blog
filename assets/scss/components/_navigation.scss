@@ -43,10 +43,13 @@
                 transition: all 0.4s;
             }
 
-            .nav-item:hover {
-                font-weight: 900;
-                color: var(--download-button);
+            @media screen and (min-width: 815) {
+                .nav-item:hover {
+                    font-weight: 900;
+                    color: var(--download-button);
+                }
             }
+            
             .highlight {
                 color: var(--download-button);
             }
