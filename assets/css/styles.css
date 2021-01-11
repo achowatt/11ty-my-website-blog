@@ -326,6 +326,7 @@ html {
   #home-page #contact .contact-form .form-group .form-label {
     display: block;
     padding: 0.5rem;
+    color: white;
   }
   #home-page #contact .contact-form .form-group .form-input {
     width: 100%;
@@ -509,9 +510,10 @@ html {
   }
 }
 #home-page header .header--description_v2 {
-  font-family: "Unica One", cursive;
+  font-family: "Raleway", cursive;
   line-height: 1.5;
   font-size: 1.4rem;
+  text-transform: uppercase;
 }
 #home-page header .header-img {
   height: 50vh;
