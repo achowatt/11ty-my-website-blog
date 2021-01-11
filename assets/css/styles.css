@@ -181,7 +181,7 @@ html {
   text-transform: uppercase;
   transition: all 0.4s;
 }
-@media screen and (min-width: 815) {
+@media (hover: hover) {
   #home-page nav .nav-items-container .nav-item:hover {
     font-weight: 900;
     color: var(--download-button);
