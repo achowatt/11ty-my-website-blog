@@ -1,106 +1,106 @@
 /***** HOME PAGE *****/
-#home-page { 
-    #projects {
-        .header-left{
-            display:inline-block;
-            text-align:right;
-            padding:1rem 2.5rem;
-            box-sizing:content-box;
-            position:relative;
-        }
-        .content-container{
-            display:grid;
-            grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
-            padding: 3rem 0 5rem;
-            grid-row-gap: 2rem;
-            justify-items: center;
-            align-items: center;
-            .project {
-                width:23rem;
-                height:16rem;
-                position:relative;
-                border-radius:5px;
-                &:hover {
-                    cursor: pointer;
-                }
-
-                .front-card {
-                    height:100%;
-                    width:100%;
-                    overflow: hidden;
-                    position:absolute;
-                    border-radius: 3px;
-                    z-index:1;
-                    transition: 0.5s transform;
-                    -webkit-backface-visibility: hidden; /* Safari */
-                    backface-visibility: hidden;
-
-                    display:grid;
-                    place-items: center;
-
-                    box-shadow: 3px 3px 3px rgba(141, 141, 141, 0.322);
-
-                    img{
-                        width:100%;
-                    }
-
-                    .project-title {
-                        display:grid;
-                        place-content: center;
-                        color:white;
-                        text-shadow: 2px 2px 4px #000000;
-                        text-align: center;
-                    }
-                }
-                .back-card {
-                    height:100%;
-                    width:100%;
-                    position:absolute;
-                    transform: rotateY(180deg);
-                    transition: 0.5s transform;
-                    background: var(--themed-background-color);
-                    border-radius: 3px;
-                    -webkit-backface-visibility: hidden; /* Safari */
-                    backface-visibility: hidden;
-
-                    display:flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-
-                    box-shadow: 3px 3px 3px rgba(141, 141, 141, 0.322);
-
-                    h3 {
-                        font-weight: bold;
-                        margin-bottom: 1rem;
-                        font-size:1.5;
-                    }
-                    .project-description {
-                        padding: 1rem;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-
-        @include screensize ($mobile) {
-            .header-left{
-                @include heading-mobile;
-            }
-            .content-container{
-                display:grid;
-                grid-template-columns: repeat(auto-fit, minmax(17rem,1fr));
-                padding-top: 0;
-                // padding-bottom: 2rem;
-                grid-row-gap: 2rem;
-                justify-items: center;
-                align-items: center;
-                .project {
-                    width:90%;
-                    height:16rem;
-                    border-radius:5px;
-                }
-            }
-        }
+#home-page {
+  #projects {
+    .header-left {
+      display: inline-block;
+      text-align: right;
+      padding: 1rem 2.5rem;
+      box-sizing: content-box;
+      position: relative;
     }
-}/***** END OF HOME-PAGE *****/
+    .content-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      padding: 3rem 0 5rem;
+      grid-row-gap: 2rem;
+      justify-items: center;
+      align-items: center;
+      .project {
+        width: 23rem;
+        height: 16rem;
+        position: relative;
+        border-radius: 5px;
+        &:hover {
+          cursor: pointer;
+        }
+
+        .front-card {
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+          position: absolute;
+          border-radius: 3px;
+          z-index: 1;
+          transition: 0.5s transform;
+          -webkit-backface-visibility: hidden; /* Safari */
+          backface-visibility: hidden;
+
+          display: grid;
+          place-items: center;
+
+          box-shadow: 3px 3px 3px rgba(141, 141, 141, 0.322);
+
+          img {
+            width: 100%;
+          }
+
+          .project-title {
+            display: grid;
+            place-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            text-align: center;
+          }
+        }
+        .back-card {
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          transform: rotateY(180deg);
+          transition: 0.5s transform;
+          background: var(--themed-background-color);
+          border-radius: 3px;
+          -webkit-backface-visibility: hidden; /* Safari */
+          backface-visibility: hidden;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          box-shadow: 3px 3px 3px rgba(141, 141, 141, 0.322);
+
+          h3 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 1.5;
+          }
+          .project-description {
+            padding: 1rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @include screensize($mobile) {
+      .header-left {
+        @include heading-mobile;
+      }
+      .content-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        padding-top: 0;
+        // padding-bottom: 2rem;
+        grid-row-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+        .project {
+          width: 90%;
+          height: 16rem;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+} /***** END OF HOME-PAGE *****/

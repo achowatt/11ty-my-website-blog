@@ -621,7 +621,7 @@ html {
   }
   #home-page #projects .content-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     padding-top: 0;
     grid-row-gap: 2rem;
     justify-items: center;
