@@ -13,7 +13,6 @@
 <body>
     <header>
         <h1 class="blog-post-title">{{title}}</h1>
-        <time datetime="{{ post.date | dateIso }}">{{ post.date | dateReadable }}</time>
     </header>
     <section>
         <main>{{ content | safe }}</main>
