@@ -9,13 +9,11 @@ tags: ["post"]
 
 Knowing different types of CSS selectors can give you a lot more flexibility! It allows you to target elements without touching the class names directly.
 
-<!-- I started noticing the importance of this at my first job where I needed to access a class but due to the integration of other things, I couldn't simply add or change class directly without impacting something else. From there, I realized that I could target the surrounding elements without having to target the element that I want to select directly. -->
-
 <!-- Excerpt End -->
 
 <br>
 
-Check out this awesome link to practice! <a style="color:#c9ae78;">https://flukeout.github.io/</a>
+Check out this awesome link to practice! <a href="https://flukeout.github.io/" style="color:#c9ae78;">https://flukeout.github.io/</a>
 
 <br>
 
