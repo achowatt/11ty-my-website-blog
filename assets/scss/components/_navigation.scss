@@ -1,58 +1,59 @@
 /***** HOME PAGE *****/
-#home-page { 
-    .place-holder {
-        height: 4.5rem;
-    }
+#home-page {
+  .place-holder {
+    height: 4.5rem;
+  }
 
-    nav{
-        background: rgb(255 255 255 / 90%);
-        display:flex;
-        justify-content:center;
+  nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4.5rem;
+    top: 0;
+    z-index: 100;
+    &.addShadow {
+      box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+    }
+    &.sticky {
+      position: fixed;
+      top: 0;
+    }
+    .nav-items-container {
+      display: flex;
+      width: 90%;
+      max-width: 800px;
+      justify-content: space-evenly;
+      position: relative;
+      list-style: none;
+
+      @include screensize($mobile) {
+        width: 100%;
+      }
+
+      .nav-item:link,
+      .nav-item:visited {
+        display: flex;
         align-items: center;
-        width:100%;
-        height:4.5rem;
-        top:0;
-        z-index:100;
-        &.addShadow{
-            box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+        justify-content: center;
+        width: 5.8rem;
+        height: 2.4rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.4s;
+      }
+
+      @media (hover: hover) {
+        .nav-item:hover {
+          font-weight: 900;
+          color: var(--download-button);
         }
-        &.sticky{
-            position:fixed;
-            top:0;
-        }
-        .nav-items-container{
-            display:flex;
-            width:90%;
-            max-width:800px;
-            justify-content: space-evenly;
-            position: relative;
-            list-style: none;
+      }
 
-            @include screensize ($mobile) {
-                width: 100%;
-            }
-
-            .nav-item:link, .nav-item:visited{
-                display:flex;
-                align-items: center;
-                justify-content: center;
-                width:5.8rem;
-                height:2.4rem;
-                text-decoration: none;
-                text-transform: uppercase;
-                transition: all 0.4s;
-            }
-
-            @media (hover: hover) {
-                .nav-item:hover {
-                    font-weight: 900;
-                    color: var(--download-button);
-                }
-            }
-
-            .highlight {
-                color: var(--download-button);
-            }
-        }
+      .highlight {
+        color: var(--download-button);
+      }
     }
-}/***** END OF HOME PAGE *****/
+  }
+} /***** END OF HOME PAGE *****/

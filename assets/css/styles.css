@@ -225,7 +225,7 @@ html {
   height: 4.5rem;
 }
 #home-page nav {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -254,7 +254,8 @@ html {
     width: 100%;
   }
 }
-#home-page nav .nav-items-container .nav-item:link, #home-page nav .nav-items-container .nav-item:visited {
+#home-page nav .nav-items-container .nav-item:link,
+#home-page nav .nav-items-container .nav-item:visited {
   display: flex;
   align-items: center;
   justify-content: center;
